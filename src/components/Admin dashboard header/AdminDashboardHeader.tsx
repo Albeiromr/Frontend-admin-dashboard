@@ -15,7 +15,7 @@ const AdminDashboardHeader = () => {
                 <input 
                 className="admin-dashboard-header__form-input"
                 type="text" 
-                placeholder="Order Number"
+                placeholder="Enter Product SKU"
                 />
 
                 <img className="admin-dashboard-header__form-icon" src={graySearch} alt="search" />

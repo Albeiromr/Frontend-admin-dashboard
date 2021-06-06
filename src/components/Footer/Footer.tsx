@@ -12,7 +12,6 @@ import mastercard from '../../assets/icons/mastercard.svg';
 import amex from '../../assets/icons/amex.svg';
 import discover from '../../assets/icons/discover.svg';
 import logo from '../../assets/logo/brand.png';
-import dashboard from '../../assets/icons/dashboard.svg';
 import {useHistory} from 'react-router-dom';
 
 
@@ -21,7 +20,6 @@ const Footer = () => {
   const history = useHistory();
 
     const handleClick = () => {
-      history.push("/products");
       window.scroll({
         top: 0,
         left: 0,
@@ -29,13 +27,6 @@ const Footer = () => {
       });   
     };
 
-    const handleAdminButtonClick = () => {
-      history.push("/admin-dashboard");
-      window.scroll({
-        top: 0,
-        left: 0
-      });
-    };
 
   return (
     <footer className="footer">
@@ -80,12 +71,6 @@ const Footer = () => {
           </div>
 
         </div>
-
-        <div onClick={handleAdminButtonClick} className="footer__admin-button">
-          <img className="footer__admin-button-icon" src={dashboard} alt="dashboard" />
-          <p className="footer__admin-button-text">Admin Dashboard</p>
-        </div>
-
 
         <div className="footer__copyright">
           <img className="footer__copyright-brand" src={logo} alt="brand icon"/>
