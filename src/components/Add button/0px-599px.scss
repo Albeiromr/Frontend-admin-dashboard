@@ -1,0 +1,29 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .add-button {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: clamp(9.986px, 3.12vw, 30px);
+    border: 2px $c2-B solid;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+      width: 11.159%;
+      margin-right: 3%;
+    }
+
+    &__text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(12.753px, 3.985vw, 30px);
+      color: $c2-B;
+    }
+  }
+}

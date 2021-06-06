@@ -1,0 +1,37 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .cart {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    min-height: clamp(537.198px, 167.874vw, 1005px);
+    padding: clamp(17.004px, 5.314vw, 50px) clamp(5.025px, 1.47vw, 50px)
+      clamp(23.188px, 7.246vw, 50px) clamp(5.025px, 1.47vw, 50px);
+    animation-name: mobileCartComponent;
+    animation-duration: 0.3s;
+    animation-delay: none;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+
+    &__payment-container {
+      display: none;
+    }
+
+    &__cart-order-details-container {
+      width: 100%;
+      height: auto;
+      min-height: clamp(439.806px, 137.439vw, 823.263px);
+    }
+  }
+
+  @keyframes mobileCartComponent {
+    from {
+      transform: translateX(-90%);
+    }
+
+    to {
+      transform: translateX(-0%);
+    }
+  }
+}

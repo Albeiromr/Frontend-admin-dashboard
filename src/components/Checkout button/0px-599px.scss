@@ -1,0 +1,26 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .checkout-button {
+    margin-top: clamp(17.777px, 5.555vw, 32.277px);
+    margin-left: 4.571%;
+    width: 90.855%;
+    height: clamp(39.42px, 12.318vw, 80px);
+    background: $c2-A;
+    border: 2px $c2-B solid;
+    border-radius: clamp(7.219px, 2.256vw, 30px);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(11.594px, 3.623vw, 30px);
+      color: $c1-J;
+    }
+  }
+}

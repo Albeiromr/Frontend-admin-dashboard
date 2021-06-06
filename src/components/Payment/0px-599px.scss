@@ -1,0 +1,275 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .payment {
+    width: 100%;
+    height: 100%;
+
+    &__title {
+      display: none;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__card-info-container {
+      width: 100%;
+      height: 31.722%;
+      background: #ffffff;
+      position: absolute;
+      top: 0%;
+      left: 0;
+      border-radius: clamp(9.399px, 2.937vw, 30px);
+      border: 2px $c1-D solid;
+    }
+
+    &__card-circle {
+      width: 6.588%;
+      position: absolute;
+      top: 4.597%;
+      left: 4.336%;
+    }
+
+    &__card-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10.821px, 3.381vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 5.871%;
+      left: 15.317%;
+    }
+
+    &__card-color-cards {
+      width: 25.802%;
+      position: absolute;
+      top: 5.471%;
+      right: 4.279%;
+    }
+
+    &__card-number-input-container {
+      width: 91.327%;
+      height: 20.689%;
+      position: absolute;
+      top: 20.977%;
+      left: 4.336%;
+    }
+
+    &__card-holder-input-container {
+      width: 91.327%;
+      height: 20.689%;
+      position: absolute;
+      top: 47.413%;
+      left: 4.336%;
+    }
+
+    &__card-expiration-input-container {
+      width: 39.837%;
+      height: 17.528%;
+      position: absolute;
+      top: 73.563%;
+      left: 4.336%;
+    }
+
+    &__card-cvc-input-container {
+      width: 39.837%;
+      height: 17.528%;
+      position: absolute;
+      top: 73.563%;
+      right: 4.336%;
+    }
+
+    &__label {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10.821px, 3.381vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__input {
+      margin: 0;
+      outline: none;
+      width: 100%;
+      height: 70.368%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: $c1-H;
+      border: 1px $c1-D solid;
+      border-radius: clamp(9.399px, 2.931vw, 30px);
+      padding: 0 clamp(15px, 5vw, 30px);
+      font-family: $secundary-font;
+      font-weight: 400;
+      color: $c1-C;
+    }
+
+    ::placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    :-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    ::-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+
+    &__demo-card-button {
+      width: 92.702%;
+      height: 5.104%;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      position: absolute;
+      top: 34.184%;
+      right: 3.513%;
+      border-radius: clamp(9.399px, 2.937px, 30px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__demo-card-button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(11.594px, 3.623vw, 30px);
+      color: #ffffff;
+    }
+
+    &__confirmation-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(17.221px, 5.381vw, 40px);
+      color: $c1-A;
+      position: absolute;
+      top: 41.75%;
+      left: 0;
+    }
+
+    &__confirmation-name-container {
+      width: 91.081%;
+      height: clamp(55.652px, 17.391vw, 120px);
+      position: absolute;
+      top: 46%;
+      left: 0;
+    }
+
+    &__confirmation-lable {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10.821px, 3.381vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__confirmation-input {
+      margin: 0;
+      outline: none;
+      width: 100%;
+      height: 70.368%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: $c1-H;
+      border: 1px $c1-D solid;
+      border-radius: clamp(9.399px, 2.931vw, 30px);
+      padding: 0 clamp(15px, 5vw, 30px);
+      font-family: $secundary-font;
+      font-weight: 400;
+      color: $c1-C;
+    }
+
+    &__confirmation-address-container {
+      width: 91.081%;
+      height: clamp(55.652px, 17.391vw, 120px);
+      position: absolute;
+      top: 54.2%;
+      left: 0;
+    }
+
+    &__complete-order-button {
+      width: 92.702%;
+      height: 5.104%;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      position: absolute;
+      top: 64.63%;
+      right: 3.513%;
+      border-radius: clamp(9.399px, 2.937px, 30px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__shield-icon {
+      width: 8.783%;
+      position: absolute;
+      top: 74.423%;
+      left: 0;
+    }
+
+    &__shield-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(14px, 2.937vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 78.117%;
+      left: 0;
+    }
+
+    &__shield-paragraph {
+      max-width: 80%;
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(9.399px, calc(0.1em + 3.3vw), 30px);
+      color: $c1-C;
+      position: absolute;
+      top: 80.425%;
+      left: 0;
+      line-height: 130%;
+    }
+
+    &__return-button {
+      width: clamp(48.772px, 15.241vw, 100px);
+      height: clamp(48.772px, 15.241vw, 100px);
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(14.755px, 4.611vw, 30px);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 91.248%;
+      left: 2%;
+    }
+
+    &__return-button-icon {
+      width: 45.546%;
+    }
+  }
+}

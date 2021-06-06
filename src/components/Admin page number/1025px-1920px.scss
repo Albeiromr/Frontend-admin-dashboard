@@ -1,0 +1,42 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-page-number--selected {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: clamp(39.757px, 3.878vw, 64px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $c1-C;
+    border-radius: clamp(25.469px, 2.484vw, 41px);
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: clamp(16px, 1.09vw, 18px);
+    color: $c1-J;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .admin-page-number {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: clamp(21.742px, 3.030vw, 50px);
+    height: 40.943%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $c1-J;
+    border-radius: clamp(25.469px, 2.484vw, 41px);
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: clamp(16px, 1.09vw, 18px);
+    color: $c1-C;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}

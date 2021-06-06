@@ -1,0 +1,92 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-listed-product {
+    width: 100%;
+    height: 15.68%;
+    position: relative;
+
+    &:hover {
+      background: $c1-E;
+      transition: all 0.1s ease;
+    }
+
+    &__clicked-area {
+      width: 85%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      z-index: 20;
+    }
+
+    &__image-container {
+      width: clamp(54.045px, 5.272vw, 87px);
+      height: clamp(54.045px, 5.272vw, 87px);
+      background: $c1-D;
+      border-radius: clamp(7.454px, 0.727vw, 12px);
+      position: absolute;
+      top: 5.122%;
+      left: 4.269%;
+    }
+
+    &__image {
+      width: 100%;
+      border-radius: inherit;
+    }
+
+    &__textOne {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 36.734%;
+      left: 17.931%;
+    }
+
+    &__textTwo {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 36.734%;
+      left: 33.9%;
+    }
+
+    &__textThree {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 36.734%;
+      left: 54.515%;
+    }
+
+    &__textFour {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 36.734%;
+      left: 67.277%;
+    }
+
+    &__textFive {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 36.734%;
+      left: 78.992%;
+    }
+
+    &__icon-container {
+      width: 5.431%;
+      height: 26.255%;
+      position: absolute;
+      top: 36.734%;
+      right: 6.74%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__icon {
+      height: 100%;
+      cursor: pointer;
+      z-index: 20;
+    }
+  }
+}

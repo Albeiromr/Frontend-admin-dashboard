@@ -1,0 +1,403 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .product-details {
+    width: 100%;
+    height: 156.25vw;
+    position: relative;
+
+    &__subcontainer {
+      width: 88.802%;
+      height: 97.666%;
+      position: absolute;
+      top: 0.666%;
+      left: 5.598%;
+    }
+
+    &__mobile-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10px, 3.255vw, 40px);
+      color: $c1-A;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__mobile-sku {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(10px, 2.343vw, 40px);
+      color: $c1-A;
+      position: absolute;
+      top: 0.426%;
+      right: 8.944%;
+    }
+
+    &__description-container {
+      width: 100%;
+      height: 44.197%;
+      position: absolute;
+      top: 54.692%;
+      right: 0;
+    }
+
+    &__desktop-title {
+      display: none;
+    }
+
+    &__desktop-sku {
+      display: none;
+    }
+
+    &__popularity-container {
+      width: 74.327%;
+      height: 5.984%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__rate-container {
+      width: 36.291%;
+      height: 70.967%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__rate-container-number {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(10px, 2.343vw, 30px);
+      color: $c1-A;
+    }
+
+    &__rate-container-stars {
+      margin: 0;
+      padding: 0;
+      width: 55.434%;
+    }
+
+    &__rate-container-amount {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(10px, 2.343vw, 30px);
+      color: #bababa;
+    }
+
+    &__sold-container {
+      width: 22.287%;
+      height: 70.967%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__sold-container-icon {
+      margin: 0;
+      padding: 0;
+      width: 18.584%;
+    }
+
+    &__sold-container-number {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(10px, 2.343vw, 30px);
+      color: $c1-A;
+    }
+
+    &__sold-container-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(10px, 2.343vw, 30px);
+      color: $c1-A;
+    }
+
+    &__viewed-container {
+      width: 27.81%;
+      height: 70.967%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__viewed-container-icon {
+      margin: 0;
+      padding: 0;
+      width: 19.858%;
+    }
+
+    &__viewed-container-number {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(10px, 2.343vw, 30px);
+      color: $c1-A;
+    }
+
+    &__viewed-container-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(10px, 2.343vw, 30px);
+      color: $c1-A;
+    }
+
+    &__popularity-container-line {
+      width: 2px;
+      height: 100%;
+      background: #f2f2f2;
+    }
+
+    &__flex-container {
+      width: 100%;
+      height: 95.347%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__description {
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(14px, calc(0.8em + 0.575vw), 30px);
+      color: $c1-A;
+      line-height: 180%;
+    }
+
+    &__tablet-quantity-selector-container {
+      width: 24.486%;
+      height: 86.538%;
+    }
+
+    &__price-container {
+      width: 47.059%;
+      height: 11.538%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5%;
+      margin-bottom: 7%;
+    }
+
+    &__price {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(20px, 4.687vw, 50px);
+      color: $c2-A;
+    }
+
+    &__crossed-line-price {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: clamp(14px, 2.604vw, 30px);
+      color: $c1-C;
+      text-decoration: line-through;
+      margin-top: 3%;
+    }
+
+    &__discount-container {
+      width: 14.953%;
+      height: 42.592%;
+      background: #3ab137;
+      border-radius: clamp(3px, 0.781vw, 6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;
+    }
+
+    &__discount {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10px, 1.822vw, 30px);
+      color: #ffffff;
+      margin-top: 3%;
+    }
+
+    &__size-container {
+      width: 100%;
+      height: 11.16%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5.769%;
+    }
+
+    &__size-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(15px, 2.604vw, 40px);
+      color: $c1-B;
+    }
+
+    &__size-square-container {
+      width: auto;
+      height: 100%;
+      display: inline-flex;
+    }
+
+    &__buttons-container {
+      width: 100%;
+      height: 20.512%;
+      margin-bottom: 4%;
+    }
+
+    &__mobile-quantity-selector-container {
+      display: none;
+    }
+
+    &__mobile-add-button-container {
+      display: none;
+    }
+
+    &__buttons-subcontainer {
+      width: 100%;
+      height: 100%;
+      border-radius: clamp(8px, 1.682vw, 30px);
+      border: 1px $c1-E solid;
+      position: relative;
+    }
+
+    &__quantity-selector-container {
+      display: none;
+    }
+
+    &__add-button-container {
+      width: 35.483%;
+      height: 51.75%;
+      position: absolute;
+      top: 23.958%;
+      right: 52.492%;
+    }
+
+    &__buy-button {
+      width: 35.483%;
+      height: 51.75%;
+      background: $c2-A;
+      position: absolute;
+      top: 23.958%;
+      right: 12.023%;
+      border-radius: clamp(8px, 1.682vw, 30px);
+      border: 2px $c2-B solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__buy-button-icon {
+      width: 8.515%;
+      margin-right: 3%;
+    }
+
+    &__buy-button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(13px, 2.148vw, 30px);
+      color: #ffffff;
+    }
+
+    &__social-container {
+      width: 41.495%;
+      height: 6.837%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__social-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(14px, 2.604vw, 30px);
+      color: $c1-B;
+    }
+
+    &__social-network-container {
+      width: 70.671%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__social-facebook-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #4668b2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-twitter-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #1d98e6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-linkedin-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #0076b4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-instagram-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #ca3174;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-icon {
+      width: 43.75%;
+      height: 43.75%;
+    }
+  }
+}

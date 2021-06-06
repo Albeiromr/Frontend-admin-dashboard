@@ -1,0 +1,233 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .footer {
+    width: 100%;
+    height: 98.046vw;
+    position: relative;
+
+    &__subcontainer {
+      width: 95.833%;
+      height: 76.037%;
+      position: absolute;
+      top: 16.069%;
+      left: 2.075%;
+    }
+
+    &__article {
+      width: 100%;
+      height: 48.379%;
+      border-radius: 1.115vw;
+      background-color: $darkFill;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__article-subcontainer {
+      width: 98.667%;
+      height: 96.259%;
+      background: $darkFill;
+      border-radius: 1.115vw;
+      border: 2px #ffffff solid;
+      position: relative;
+    }
+
+    &__article-text-box {
+      width: 40.58%;
+      height: 80.258%;
+      position: absolute;
+      top: 9.957%;
+      left: 6.831%;
+    }
+
+    &__article-title {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: 2.083vw;
+      position: absolute;
+      top: 0%;
+      left: 0;
+    }
+
+    &__article-subtitle {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: 3.977vw;
+      position: absolute;
+      top: 12%;
+      left: 0;
+    }
+
+    &__article-paragraph {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: clamp(14px, calc(0.7em + 0.1vw), 16px);
+      line-height: 22px;
+      position: absolute;
+      top: 38%;
+      left: 0;
+    }
+
+    &__article-button {
+      width: 56.049%;
+      height: 20.093%;
+      border-radius: clamp(10px, 0.952vw, 18px);
+      border: 2px #ffffff solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0%;
+      left: 0;
+    }
+
+    &__article-button-text {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(14px, 1.822vw, 20px);
+    }
+
+    &__image-container {
+      width: 47.481%;
+      height: 88.368%;
+      position: absolute;
+      bottom: 0;
+      left: 48.073%;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__social {
+      width: 100%;
+      height: 6.385%;
+      position: absolute;
+      top: 62.002%;
+      left: 0%;
+    }
+
+    &__admin-button {
+      display: none;
+    }
+
+    &__social-network-container {
+      width: 27.173%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__social-facebook-container {
+      width: 18.28%;
+      height: 100%;
+      border-radius: 50%;
+      background: #4668b2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-twitter-container {
+      width: 18.28%;
+      height: 100%;
+      border-radius: 50%;
+      background: #1d98e6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-linkedin-container {
+      width: 18.28%;
+      height: 100%;
+      border-radius: 50%;
+      background: #0076b4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-instagram-container {
+      width: 18.28%;
+      height: 100%;
+      border-radius: 50%;
+      background: #ca3174;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-icon {
+      width: 43.75%;
+      height: 43.75%;
+    }
+
+    &__social-card-container {
+      width: 26.222%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__social-card {
+      width: 20.725%;
+      height: 100%;
+    }
+
+    &__copyright {
+      width: 47.682%;
+      height: 17.864%;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+    }
+
+    &__copyright-brand {
+      width: 61.253%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__copyright-text {
+      margin: 0;
+      padding: 0;
+      color: $c1-A;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: clamp(15px, 2.083vw, 17px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

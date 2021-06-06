@@ -1,0 +1,220 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 1025px) {
+  .slide {
+    width: 100%;
+    max-width: 1650px;
+    height: 43.03vw;
+    max-height: 710.28px;
+    position: relative;
+
+    &__subcontainer {
+      width: 82.173%;
+      height: 81.447%;
+      position: absolute;
+      top: 12.957%;
+      left: 8.909%;
+    }
+
+    &__column-left {
+      width: 12.848%;
+      height: 90.95%;
+      border-radius: 0 clamp(20px, 2.422vw, 40px) clamp(20px, 2.422vw, 40px) 0;
+      position: absolute;
+      top: 5%;
+      left: 0;
+    }
+
+    &__column-right {
+      width: 12.848%;
+      height: 90.95%;
+      border-radius: clamp(20px, 2.422vw, 40px) 0 0 clamp(20px, 2.422vw, 40px);
+      position: absolute;
+      top: 5%;
+      right: 0;
+    }
+
+    &__column-left-image {
+      width: 100%;
+      border-radius: 100px;
+    }
+
+    &__article {
+      width: 100%;
+      height: 91.751%;
+      //background: $c1-E;
+      border-radius: clamp(20px, 2.422vw, 40px);
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    &__articul-images-preload {
+      width: 1px;
+      height: 1px;
+      visibility: hidden;
+      position: absolute;
+    }
+
+    &__image-preloaded {
+      max-width: 100%;
+    }
+
+    &__article-image1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: clamp(20px, 2.222vw, 40px);
+      animation-name: slideImage1;
+      animation-delay: none;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+      animation-direction: normal;
+      animation-duration: 1s;
+    }
+
+    &__article-image2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: clamp(20px, 2.222vw, 40px);
+      animation-name: slideImage2;
+      animation-delay: none;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+      animation-direction: normal;
+      animation-duration: 1s;
+    }
+
+    &__article-image3 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: clamp(20px, 2.222vw, 40px);
+      animation-name: slideImage3;
+      animation-delay: none;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+      animation-direction: normal;
+      animation-duration: 1s;
+    }
+
+    &__article-text-container {
+      width: 37.761%;
+      height: 71.553%;
+      position: absolute;
+      top: 12.241%;
+      left: 6.49%;
+    }
+
+    &__article-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      color: $c1-C;
+      font-size: clamp(16px, 1.696vw, 28px);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__article-subtitle {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      line-height: 130%;
+      color: $c1-A;
+      font-size: clamp(30px, 3.393vw, 56px);
+      position: absolute;
+      top: 25%;
+      left: 0;
+    }
+
+    &__article-button {
+      width: 39.228%;
+      height: 17.62%;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(8px, 0.952vw, 15.71px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__article-button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: clamp(16px, 1.212vw, 20px);
+    }
+
+    &__circle-container {
+      width: 9.976%;
+      height: 4.198%;
+      position: absolute;
+      bottom: 0;
+      left: 44.989%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__circle {
+      width: 17.439%;
+      height: 100%;
+      border-radius: 81px;
+      background: #c4c4c4;
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+
+    &__circle--selected {
+      width: 37.694%;
+      height: 100%;
+      border-radius: 81px;
+      background: $c2-A;
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+  }
+
+  @keyframes slideImage1 {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slideImage2 {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slideImage3 {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}

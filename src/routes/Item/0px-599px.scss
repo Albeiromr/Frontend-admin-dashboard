@@ -1,0 +1,11 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .item {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background: $c1-J;
+  }
+}

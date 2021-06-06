@@ -1,0 +1,181 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .cart-individual-product {
+    width: 100%;
+    height: clamp(149.178px, 46.796vw, 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__subcontainer {
+      width: 100%;
+      height: 80.002%;
+      position: relative;
+    }
+
+    &__image-container {
+      width: clamp(74.867px, 23.396vw, 140px);
+      height: clamp(74.867px, 23.396vw, 140px);
+      border-radius: clamp(8.981px, 2.806vw, 30px);
+      background: rgb(206, 199, 194);
+      position: absolute;
+      top: 24.996%;
+      left: 0;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+    }
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(13.913px, 4.347vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 2%;
+      left: 0;
+      cursor: pointer;
+    }
+
+    &__big-price {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(16.293px, 5.091vw, 50px);
+      color: $c2-A;
+      position: absolute;
+      top: 58.123%;
+      left: 31.615%;
+    }
+
+    &__crossed-line-price {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10.859px, 3.393vw, 30px);
+      color: $c1-C;
+      text-decoration: line-through;
+      position: absolute;
+      top: 78.519%;
+      left: 31.615%;
+    }
+
+    &__size-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(11.98px, 3.743vw, 30px);
+      color: $c1-B;
+      position: absolute;
+      top: 31.875%;
+      left: 31.615%;
+    }
+
+    &__size-container {
+      width: auto;
+      padding: 0 clamp(10px, 2.6vw, 30px);
+      height: clamp(26.674px, 8.335vw, 50px);
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(8px, 2.5vw, 20px);
+      position: absolute;
+      top: 26.874%;
+      left: 43.597%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__size {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(10.001px, 3.125vw, 30px);
+      color: #ffffff;
+    }
+
+    &__line {
+      width: 100%;
+      height: 2px;
+      background: $c1-F;
+      position: absolute;
+      bottom: 3%;
+      left: 0;
+    }
+
+    &__quantity-container {
+      width: 28.98%;
+      height: 25.816%;
+      background: $c1-H;
+      position: absolute;
+      top: 24.996%;
+      right: 0;
+      border-radius: clamp(9.275px, 2.898vw, 30px);
+      border: 2px $c1-D solid;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 2%;
+    }
+
+    &__quantity-container-number {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(11.988px, 4.229vw, 30px);
+      color: $c1-C;
+    }
+
+    &__quantity-container-line {
+      height: 70%;
+      width: 2px;
+      background: $c1-D;
+    }
+
+    &__quantity-container-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(11.601px, 3.625vw, 30px);
+      color: $c1-A;
+    }
+
+    &__remove-container {
+      width: 24.521%;
+      height: 14.059%;
+      position: absolute;
+      top: 69.37%;
+      right: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__remove-container-icon {
+      width: 22.756%;
+    }
+
+    &__remove-container-text {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(12.637px, 3.949vw, 30px);
+      color: $c1-C;
+    }
+  }
+}

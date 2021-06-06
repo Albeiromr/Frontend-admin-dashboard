@@ -1,0 +1,26 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .amin-logout-button {
+    width: 100;
+    height: clamp(88.609px, 8.644vw, 142.64px);
+    position: relative;
+
+    &__button {
+      @include whiteButton;
+      position: absolute;
+      top: 30.145%;
+      left: 3.696%;
+    }
+
+    &__icon {
+      width: 15.007%;
+      margin-right: 8%
+    }
+
+    &__text {
+      @include whiteButtonText;
+    }
+  }
+}

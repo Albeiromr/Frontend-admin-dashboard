@@ -1,0 +1,84 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 1025px) {
+  .multi-range-slider {
+    width: 100%;
+    height: 9.574%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 19.724%;
+    left: 0;
+
+    &__thumb {
+      width: 100%;
+      height: 0;
+      -webkit-appearance: none;
+      pointer-events: none;
+      position: absolute;
+      outline: none;
+      z-index: 4;
+
+      &::-webkit-slider-thumb {
+        width: clamp(5px, 1.212vw, 20px);
+        height: clamp(5px, 1.212vw, 20px);
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        background-color: $c1-J;
+        border: none;
+        border-radius: 50%;
+        border: 1px $c1-D solid;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        pointer-events: all;
+        position: relative;
+      }
+
+      &::-moz-range-thumb {
+        width: clamp(5px, 1.212vw, 20px);
+        height: clamp(5px, 1.212vw, 20px);
+        box-sizing: border-box;
+        background-color: $c1-J;
+        border: none;
+        border-radius: 50%;
+        border: 1px $c1-D solid;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        pointer-events: all;
+        position: relative;
+      }
+    }
+
+    &__thumb--left::-webkit-slider-thumb {
+      z-index: 4;
+    }
+
+    &__thumb--right::-webkit-slider-thumb {
+      z-index: 4;
+    }
+
+    &__slider {
+      width: 100%;
+      height: 30%;
+      position: relative;
+    }
+
+    &__slider-track {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 3px;
+      background-color: $c1-E;
+      z-index: 1;
+    }
+
+    &__slider-range {
+      height: 100%;
+      position: absolute;
+      border-radius: 3px;
+      background-color: $c2-A;
+      z-index: 2;
+    }
+  }
+}

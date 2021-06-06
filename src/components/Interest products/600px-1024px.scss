@@ -1,0 +1,59 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .interest-products {
+    width: 100%;
+    height: 67.057vw;
+    position: relative;
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(18px, 2.343vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 5.028%;
+      left: 5.598%;
+    }
+
+    &__product-card-container {
+      width: 97.265%;
+      height: auto;
+      min-height: 300px;
+      position: absolute;
+      top: 13.957%;
+      left: 1.367%;
+      display: flex;
+    }
+
+    &__button {
+      width: 24.441%;
+      height: 7.327%;
+      cursor: pointer;
+      border-radius: clamp(8px, 2.045vw, 22px);
+      position: absolute;
+      top: 3.328%;
+      right: 1.598%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(14px, 2.083vw, 25px);
+      color: $c1-A;
+      margin-left: 17%;
+    }
+
+    &__button-arrow {
+      width: clamp(10px, 2.727vw, 30px);
+      margin-right: 18%;
+    }
+  }
+}

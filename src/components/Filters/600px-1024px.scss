@@ -1,0 +1,65 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .filters {
+    width: 86.285%;
+    height: 94.938%;
+    position: absolute;
+    top: 2.812%;
+    left: 12.285%;
+
+    &__title-one {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(16px, 3.069vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__categories-container {
+      width: 100%;
+      height: 18.726%;
+      position: absolute;
+      top: 6.629%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title-two {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(16px, 3.069vw, 30px);
+      color: $c1-A;
+      position: absolute;
+      top: 31.403%;
+      left: 0;
+    }
+
+    &__sizes-container {
+      width: 100%;
+      height: 20.222%;
+      position: absolute;
+      top: 37.927%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__range-filter-container {
+      width: 98.013%;
+      height: 25.829%;
+      position: absolute;
+      top: 65.605%;
+      left: 0;
+    }
+  }
+}

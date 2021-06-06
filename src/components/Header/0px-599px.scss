@@ -1,0 +1,92 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .header {
+    width: 100%;
+    min-width: 320px;
+    height: 23.787vw;
+    min-height: 76.119px;
+    position: relative;
+
+    &__contact-bar {
+      width: 100%;
+      height: 33.509%;
+      padding: 0 5.676%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &__contact-data {
+      width: 100%;
+      height: 48.484%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__green-text {
+      font-family: $secundary-font;
+      color: $c2-A;
+      font-weight: 400;
+      margin: 0;
+      font-size: clamp(9.327px, 2.913vw, 17.449px);
+      margin-right: clamp(10.821px, 3.381vw, 20.256px);
+    }
+
+    &__black-text {
+      font-family: $secundary-font;
+      color: $c1-A;
+      font-weight: 400;
+      margin: 0;
+      font-size: clamp(9.327px, 2.913vw, 17.449px);
+      margin-right: 0 clamp(10.821px, 3.381vw, 20.256px);
+    }
+
+    &__contact-links {
+      display: none;
+    }
+
+    &__line {
+      width: 88.647%;
+      height: 2.083%;
+      background: $c1-E;
+      position: absolute;
+      bottom: 0;
+      left: 5.676%;
+    }
+
+    &__logo-bar {
+      width: 100%;
+      height: 66.49%;
+      position: absolute;
+      top: 33.509%;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__logo-container {
+      width: 55.797%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    &__logo-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__search-container {
+      display: none;
+    }
+
+    &__icon-container {
+      display: none;
+    }
+  }
+}

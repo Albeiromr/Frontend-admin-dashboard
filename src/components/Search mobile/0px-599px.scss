@@ -1,0 +1,10 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .search-mobile {
+    width: 100%;
+    min-width: 320px;
+    height: 13.043vw;
+    min-height: 41.739px;
+  }
+}

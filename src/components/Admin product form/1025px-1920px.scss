@@ -1,0 +1,371 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-product-form {
+    width: 100%;
+    max-width: 1650px;
+    height: 42.121vw;
+    max-height: 695px;
+    position: relative;
+
+    &__table-title-bar {
+      width: 92.848%;
+      height: 10.071%;
+      background: $c1-D;
+      @include tableTitleBarborderRadius;
+      position: absolute;
+      top: 0;
+      left: 3.575%;
+    }
+
+    &__table-title {
+      @include grayButtonText;
+      position: absolute;
+      top: 32.471%;
+      left: 3.851%;
+    }
+
+    &__table-container {
+      width: 92.848%;
+      height: 89.928%;
+      background: $c1-J;
+      position: absolute;
+      border: 2px $c1-D solid;
+      @include tableBorderRadius;
+      top: 10.071%;
+      left: 3.575%;
+    }
+
+    ::placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    :-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    ::-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+
+    &__form {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__form-input-container-one {
+      width: 25.065%;
+      height: 27.68%;
+      position: absolute;
+      top: 1.76%;
+      left: 3.851%;
+    }
+
+    &__product-description {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__text-area {
+      outline: none;
+      width: 100%;
+      height: 87.526%;
+      padding: clamp(13.492px, 1.316vw, 21.72px);
+      background: $c1-H;
+      border: 1px $c1-D solid;
+      border-radius: clamp(8.933px, 0.871vw, 14.38px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @include placeholder;
+      resize: none;
+    }
+
+    &__form-input-container-two {
+      width: 67.008%;
+      height: 11.52%;
+      position: absolute;
+      top: 1.76%;
+      left: 30.809%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__product-sku {
+      width: 20.369%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__input {
+      @include input;
+      @include placeholder;
+    }
+
+    &__input--disabled {
+      outline: none;
+      width: 100%;
+      height: 70.027%;
+      padding: 0 clamp(13.492px, 1.316vw, 21.72px);
+      background: $c1-E;
+      border: none;
+      border-radius: clamp(8.933px, 0.871vw, 14.38px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(10.423px, 1.016vw, 16.78px);
+      color: $c1-B;
+    }
+
+    &__product-type {
+      width: 37.308%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-name {
+      width: 37.308%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__form-input-container-three {
+      width: 67.008%;
+      height: 11.52%;
+      position: absolute;
+      top: 18.006%;
+      left: 30.809%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__product-stock {
+      width: 16.754%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-rate {
+      width: 16.754%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-price {
+      width: 16.754%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-old-price {
+      width: 16.754%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-review-quantity {
+      width: 21.505%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__form-input-container-four {
+      width: 93.733%;
+      height: 11.52%;
+      position: absolute;
+      top: 34.72%;
+      left: 3.851%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__product-sold-quantity {
+      width: 15.323%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-main-image {
+      width: 40.883%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-thumbnail {
+      width: 40.883%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__form-input-container-five {
+      width: 81.201%;
+      height: 11.52%;
+      position: absolute;
+      top: 50.56%;
+      left: 3.851%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__select {
+      @include select;
+      @include placeholder;
+    }
+
+    &__product-size-one {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-size-two {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-size-three {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-size-four {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-size-five {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__form-input-container-six {
+      width: 81.201%;
+      height: 11.52%;
+      position: absolute;
+      top: 66.4%;
+      left: 3.851%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__product-category-one {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-category-two {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-category-three {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-category-four {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-category-five {
+      width: 17.711%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__form-input-container-seven {
+      width: 44.608%;
+      height: 11.52%;
+      position: absolute;
+      top: 82.24%;
+      left: 3.851%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__product-interest-for-you {
+      width: 32.25%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-profit {
+      width: 25.08%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__product-views-quantity {
+      width: 32.25%;
+      height: 100%;
+      position: relative;
+    }
+
+    &__lable {
+      @include lableText;
+    }
+
+    &__paragraph {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 600;
+      font-size: clamp(16px, 1.09vw, 18px);
+      color: $c4-A;
+      position: absolute;
+      bottom: 4.96%;
+      right: 2.349%;
+    }
+
+    &__paragraph--success {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(16px, 1.818vw, 30px);
+      color: #688f4e;
+      position: absolute;
+      bottom: 4.96%;
+      right: 2.349%;
+    }
+
+    &__submit-button {
+      width: clamp(126.211px, 12.313vw, 203.17px);
+      height: clamp(35.185px, 3.432vw, 56.64px);
+      border-radius: clamp(10.504px, 1.024vw, 16.91px);
+      border: 3px $c2-B solid;
+      background: $c2-A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(16px, 1.278vw, 21.09px);
+      color: $c1-J;
+      position: absolute;
+      bottom: 3%;
+      right: 1.2%;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .main-nav {
+    &__subcontainer {
+      margin: 0;
+      padding: 0 5.533%;
+      width: clamp(1027.8px, 131.77%, 2000px);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__option {
+      margin: 0;
+      padding: 0 2.47%;
+      width: auto;
+      height: 57.928%;
+      background: $c1-H;
+      border-radius: 1.562vw;
+      border: 2px $c1-D solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__option--selected {
+      margin: 0;
+      padding: 0 2.47%;
+      width: auto;
+      height: 57.928%;
+      background: $c2-A;
+      border-radius: 1.562vw;
+      border: 2px $c2-B solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.1s ease-in;
+    }
+
+    &__option-text {
+      margin: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      color: $c1-A;
+      font-size: clamp(15px, 1.953vw, 22px);
+    }
+
+    &__option-text--selected {
+      margin: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      color: $c1-J;
+      font-size: clamp(15px, 1.953vw, 22px);
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+}

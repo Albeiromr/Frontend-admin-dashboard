@@ -1,0 +1,63 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .interest-products {
+    width: 100%;
+    min-width: 320px;
+    height: 206.28vw;
+    min-height: 660.083px;
+    position: relative;
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(16px, 4.347vw, 25px);
+      color: $c1-A;
+      position: absolute;
+      top: 2.8%;
+      left: 3.408%;
+    }
+
+    &__product-card-container {
+      width: 98.067%;
+      height: auto;
+      min-height: 300px;
+      position: absolute;
+      top: 7.854%;
+      left: 0.966%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__button {
+      width: 39.379%;
+      height: 4.284%;
+      background: $c1-F;
+      cursor: pointer;
+      border-radius: clamp(7.907px, 2.471vw, 22px);
+      position: absolute;
+      bottom: 2%;
+      right: 2.891%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(12.367px, 3.864vw, 25px);
+      color: $c1-A;
+      margin-left: 13%;
+    }
+
+    &__button-arrow {
+      width: clamp(10.542px, 4.5vw, 30px);
+      margin-right: 13%;
+    }
+  }
+}

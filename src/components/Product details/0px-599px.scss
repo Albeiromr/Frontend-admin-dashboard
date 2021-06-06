@@ -1,0 +1,389 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .product-details {
+    width: 100%;
+    min-width: 320px;
+    height: 259.42vw;
+    min-height: 830.144px;
+    position: relative;
+
+    &__subcontainer {
+      width: 89.371%;
+      height: 97.206%;
+      position: absolute;
+      top: 1.862%;
+      left: 5.314%;
+    }
+
+    &__mobile-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(16.061px, 5.019vw, 40px);
+      color: $c1-A;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__mobile-sku {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(12px, 3.613vw, 40px);
+      color: $c1-A;
+      position: absolute;
+      top: 2.711%;
+      left: 0;
+    }
+
+    &__description-container {
+      width: 100%;
+      height: 55.651%;
+      position: absolute;
+      top: 41.379%;
+      right: 0;
+    }
+
+    &__desktop-title {
+      display: none;
+    }
+
+    &__desktop-sku {
+      display: none;
+    }
+
+    &__popularity-container {
+      width: 90%;
+      height: 5.335%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__rate-container {
+      width: 55.255%;
+      height: 70.967%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__rate-container-number {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(13.913px, 4.347vw, 30px);
+      color: $c1-A;
+    }
+
+    &__rate-container-stars {
+      margin: 0;
+      padding: 0;
+      width: 55.434%;
+    }
+
+    &__rate-container-amount {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(13.913px, 4.347vw, 30px);
+      color: #bababa;
+    }
+
+    &__sold-container {
+      width: 33.933%;
+      height: 70.967%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__sold-container-icon {
+      margin: 0;
+      padding: 0;
+      width: 18.584%;
+    }
+
+    &__sold-container-number {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(13.913px, 4.347vw, 30px);
+      color: $c1-A;
+    }
+
+    &__sold-container-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(13.913px, 4.347vw, 30px);
+      color: $c1-A;
+    }
+
+    &__viewed-container {
+      display: none;
+    }
+
+    &__popularity-container-line {
+      width: 2px;
+      height: 100%;
+      background: #f2f2f2;
+    }
+
+    &__popularity-container-line-last {
+      display: none;
+    }
+
+    &__flex-container {
+      width: 100%;
+      height: 96.115%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__description {
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 400;
+      font-size: clamp(13px, calc(0.65em + 1.005vw), 30px);
+      color: $c1-A;
+      line-height: 150%;
+      margin-top: 5%;
+    }
+
+    &__tablet-quantity-selector-container {
+      display: none;
+    }
+
+    &__price-container {
+      width: 86.756%;
+      height: 9.981%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5%;
+      margin-bottom: 7%;
+    }
+
+    &__price {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(27.826px, 8.695vw, 50px);
+      color: $c2-A;
+    }
+
+    &__crossed-line-price {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: clamp(14.458px, 4.83vw, 30px);
+      color: $c1-C;
+      text-decoration: line-through;
+      margin-top: 3%;
+    }
+
+    &__discount-container {
+      width: 14.953%;
+      height: 42.592%;
+      background: #3ab137;
+      border-radius: clamp(4.637px, 1.449vw, 6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;
+    }
+
+    &__discount {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(10.821px, 3.381vw, 30px);
+      color: #ffffff;
+      margin-top: 3%;
+    }
+
+    &__size-container {
+      width: 100%;
+      height: 7.308%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12.609%;
+    }
+
+    &__size-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(15.458px, 4.83vw, 40px);
+      color: $c1-B;
+    }
+
+    &__size-square-container {
+      width: auto;
+      height: 100%;
+      display: inline-flex;
+    }
+
+    &__buttons-container {
+      width: 100%;
+      height: 27.541%;
+      position: relative;
+      margin-bottom: 14%;
+    }
+
+    &__mobile-quantity-selector-container {
+      width: 45.257%;
+      height: 30.405%;
+      position: absolute;
+      top: 1.351%;
+      left: 0;
+    }
+
+    &__mobile-add-button-container {
+      width: 50.948%;
+      height: 36.675%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &__buttons-subcontainer {
+      width: 87.804%;
+      height: 42.567%;
+      border-radius: clamp(9.986px, 3.12vw, 30px);
+      border: 1px $c1-E solid;
+      position: absolute;
+      bottom: 0;
+      right: 6%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__quantity-selector-container {
+      display: none;
+    }
+
+    &__add-button-container {
+      display: none;
+    }
+
+    &__buy-button {
+      width: 95.679%;
+      height: 78.857%;
+      background: $c2-A;
+      border-radius: inherit;
+      border: 2px $c2-B solid;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__buy-button-icon {
+      width: 6.854%;
+      margin-right: 3%;
+    }
+
+    &__buy-button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(12.753px, 3.985vw, 30px);
+      color: #ffffff;
+    }
+
+    &__social-container {
+      width: 76.486%;
+      height: 5.914%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 11.756%;
+    }
+
+    &__social-text {
+      margin: 0;
+      padding: 0;
+      font-family: $third-font;
+      font-weight: 700;
+      font-size: clamp(15.458px, 4.83vw, 30px);
+      color: $c1-B;
+    }
+
+    &__social-network-container {
+      width: 70.671%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__social-facebook-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #4668b2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-twitter-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #1d98e6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-linkedin-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #0076b4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-instagram-container {
+      width: 17%;
+      height: 100%;
+      border-radius: 50%;
+      background: #ca3174;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__social-icon {
+      width: 43.75%;
+      height: 43.75%;
+    }
+  }
+}

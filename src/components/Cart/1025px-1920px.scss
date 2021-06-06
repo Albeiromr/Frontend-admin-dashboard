@@ -1,0 +1,27 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 1025px) {
+  .cart {
+    width: 100%;
+    max-width: 1650px;
+    height: auto;
+    min-height: clamp(782.106px, 76.303vw, 1259px);
+    padding: 0 clamp(10px, 3.557vw, 58.7px)
+      clamp(10px, 6.476vw, 106.86px) clamp(10px, 3.557vw, 58.7px);
+    display: inline-flex;
+
+    &__payment-container {
+      width: 57.396%;
+      height: clamp(689.868px, 67.304vw, 1110.52px);
+      margin-right: clamp(10px, 2.46vw, 20.61px);
+    }
+
+    &__cart-order-details-container {
+      width: 39.955%;
+      height: auto;
+      min-height: clamp(10px, 53.751vw, 886.9px);
+      margin-top: clamp(10px, 2.896vw, 47.79px);
+      margin-left: clamp(10px, 1.23vw, 10.31px);
+    }
+  }
+}

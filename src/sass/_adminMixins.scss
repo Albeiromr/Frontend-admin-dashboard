@@ -1,0 +1,165 @@
+@import "./variables";
+
+//Text mixins
+
+@mixin poppinsRegular18 {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: clamp(16px, 1.09vw, 18px);
+  color: $admin-black-text;
+}
+
+@mixin poppinsMedium18 {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: clamp(16px, 1.09vw, 18px);
+  color: $admin-black-text;
+}
+
+@mixin grayButtonText {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: clamp(16px, 1.278vw, 21.09px);
+  color: $c1-J;
+}
+
+@mixin whiteButtonText {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: clamp(16px, 1.278vw, 21.09px);
+  color: $c1-C;
+}
+
+@mixin tableFieldTitle {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: clamp(16px, 1.09vw, 18px);
+  color: $c1-J;
+}
+
+// button mixins
+
+@mixin greyButton {
+  width: clamp(126.211px, 12.313vw, 203.17px);
+  height: clamp(35.185px, 3.432vw, 56.64px);
+  border-radius: clamp(10.504px, 1.024vw, 16.91px);
+  background: $c1-D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@mixin whiteButton {
+  width: clamp(126.211px, 12.313vw, 203.17px);
+  height: clamp(35.185px, 3.432vw, 56.64px);
+  border-radius: clamp(10.504px, 1.024vw, 16.91px);
+  border: 2px $c1-C solid;
+  background: $c1-J;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@mixin greenButton {
+  width: clamp(126.211px, 12.313vw, 203.17px);
+  height: clamp(35.185px, 3.432vw, 56.64px);
+  border-radius: clamp(10.504px, 1.024vw, 16.91px);
+  border: 3px $c2-B solid;
+  background: $c2-A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@mixin tableTitleBarborderRadius {
+  border-radius: clamp(12.424px, 1.212vw, 20px) clamp(12.424px, 1.212vw, 20px) 0
+    0;
+}
+
+@mixin tableBorderRadius {
+  border-radius: 0 0 clamp(12.424px, 1.212vw, 20px)
+    clamp(12.424px, 1.212vw, 20px);
+}
+
+//inputs
+
+@mixin lableText {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 600;
+  font-size: clamp(12px, 0.871vw, 14.38px);
+  color: $admin-black-text;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin input {
+  outline: none;
+  width: 100%;
+  height: 70.027%;
+  padding: 0 clamp(13.492px, 1.316vw, 21.72px);
+  background: $c1-H;
+  border: 1px $c1-D solid;
+  border-radius: clamp(8.933px, 0.871vw, 14.38px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin placeholder {
+  font-family: $secundary-font;
+  font-weight: 400;
+  font-size: clamp(10.423px, 1.016vw, 16.78px);
+  color: $c1-C;
+}
+
+@mixin select {
+  outline: none;
+  width: 100%;
+  height: 70.027%;
+  padding: 0 clamp(13.492px, 1.316vw, 21.72px);
+  background: $c1-H;
+  border: 1px $c1-D solid;
+  border-radius: clamp(8.933px, 0.871vw, 14.38px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  appearance: none;
+}
+
+//product details text
+
+@mixin productTextTitle {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: clamp(16px, 1.278vw, 21.09px);
+  color: $c2-A;
+  position: absolute;
+}
+
+@mixin productText {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: clamp(15px, 1.212vw, 20px);
+  color: $c1-C;
+  position: absolute;
+}

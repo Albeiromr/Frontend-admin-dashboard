@@ -1,0 +1,213 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-product-details {
+    width: 100%;
+    max-width: 1650px;
+    height: 42.121vw;
+    max-height: 695px;
+    position: relative;
+
+    &__table-title-bar {
+      width: 77.272%;
+      height: 10.071%;
+      background: $c1-D;
+      @include tableTitleBarborderRadius;
+      position: absolute;
+      top: 0;
+      left: 11.333%;
+    }
+
+    &__table-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(18.636px, 1.818vw, 30px);
+      color: $c1-J;
+      position: absolute;
+      top: 25.9%;
+      left: 3.529%;
+    }
+
+    &__table-container {
+      width: 77.272%;
+      height: 89.928%;
+      background: $c1-J;
+      position: absolute;
+      border: 2px $c1-D solid;
+      @include tableBorderRadius;
+      top: 10.071%;
+      left: 11.333%;
+    }
+
+    &__table-image-container {
+      width: clamp(344.151px, 33.575vw, 554px);
+      height: clamp(344.151px, 33.575vw, 554px);
+      background: $c1-D;
+      border-radius: clamp(28.575px, 2.787vw, 46px);
+      position: absolute;
+      top: 5.12%;
+      left: 3.529%;
+    }
+
+    &__table-image {
+      width: 100%;
+      border-radius: inherit;
+    }
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(24.848px, 2.424vw, 40px);
+      color: $admin-black-text;
+      position: absolute;
+      top: 4%;
+      left: 50.509%;
+    }
+
+    &__description-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: clamp(15px, calc(0.1em + 1.112vw), 20px);
+      color: $c1-C;
+      width: 36.705%;
+      position: absolute;
+      top: 21.36%;
+      left: 50.509%;
+      line-height: 150%;
+    }
+
+    &__description-title {
+      @include productTextTitle;
+      position: absolute;
+      top: 16.12%;
+      left: 50.509%;
+    }
+
+    &__product-type-title {
+      @include productTextTitle;
+      top: 45.28%;
+      left: 50.509%;
+    }
+
+    &__product-type-text {
+      @include productText;
+      top: 45.28%;
+      left: 64.901%;
+    }
+
+    &__sku-title {
+      @include productTextTitle;
+      top: 53.92%;
+      left: 50.509%;
+    }
+
+    &__sku-text {
+      @include productText;
+      top: 54.42%;
+      left: 56.137%;
+    }
+
+    &__price-title {
+      @include productTextTitle;
+      top: 62.72%;
+      left: 50.509%;
+    }
+
+    &__price-text {
+      @include productText;
+      top: 63.22%;
+      left: 57.078%;
+    }
+
+    &__stock-title {
+      @include productTextTitle;
+      top: 71.36%;
+      left: 50.509%;
+    }
+
+    &__stock-text {
+      @include productText;
+      top: 71.86%;
+      left: 57.549%;
+    }
+
+    &__reviews-title {
+      @include productTextTitle;
+      top: 80%;
+      left: 50.509%;
+    }
+
+    &__reviews-text {
+      @include productText;
+      top: 80.50%;
+      left: 59.731%;
+    }
+
+    &__sizes-title {
+      @include productTextTitle;
+      top: 88.64%;
+      left: 50.509%;
+    }
+
+    &__sizes-text {
+      @include productText;
+      top: 89.14%;
+      left: 57.078%;
+    }
+
+    &__old-price-title {
+      @include productTextTitle;
+      top: 62.72%;
+      left: 72.392%;
+    }
+
+    &__old-price-text {
+      @include productText;
+      top: 63.22%;
+      left: 82.576%;
+    }
+
+    &__rate-title {
+      @include productTextTitle;
+      top: 71.36%;
+      left: 72.392%;
+    }
+
+    &__rate-text {
+      @include productText;
+      top: 71.86%;
+      left: 78.725%;
+    }
+
+    &__sold-title {
+      @include productTextTitle;
+      top: 80%;
+      left: 72.392%;
+    }
+
+    &__sold-text {
+      @include productText;
+      top: 80.50%;
+      left: 78.275%;
+    }
+
+    &__profit-title {
+      @include productTextTitle;
+      top: 88.64%;
+      left: 72.392%;
+    }
+
+    &__profit-text {
+      @include productText;
+      top: 89.14%;
+      left: 79.117%;
+    }
+  }
+}

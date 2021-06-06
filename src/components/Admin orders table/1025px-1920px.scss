@@ -1,0 +1,68 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-orders-table {
+    width: 100%;
+    max-width: 1650px;
+    height: 42.121vw;
+    max-height: 695px;
+    position: relative;
+
+    &__table-title-bar {
+      width: 92.848%;
+      height: 10.071%;
+      background: $c1-D;
+      @include tableTitleBarborderRadius;
+      position: absolute;
+      top: 0;
+      left: 3.575%;
+    }
+
+    &__table-container {
+      width: 92.848%;
+      height: 89.928%;
+      background: $c1-J;
+      position: absolute;
+      border: 2px $c1-D solid;
+      @include tableBorderRadius;
+      top: 10.071%;
+      left: 3.575%;
+    }
+
+    &__titleOne {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 4.660%;
+    }
+
+    &__titleTwo {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 18.472%;
+    }
+
+    &__titleThree {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 41.253%;
+    }
+
+    &__titleFour {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 68.537%;
+    }
+
+    &__titleFive {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 84.791%;
+    }
+  }
+}

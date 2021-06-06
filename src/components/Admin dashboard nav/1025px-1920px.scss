@@ -1,0 +1,140 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-dashboard-nav {
+    width: 100%;
+    max-width: 1650px;
+    height: 7.696vw;
+    max-height: 127px;
+    padding: clamp(21.854px, 2.132vw, 35.18px) clamp(36.651px, 3.575vw, 59px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left-button-container {
+      width: 28.526%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__selected-button {
+      @include greyButton;
+      transition: all 0.3s ease;
+    }
+
+    &__no-selected-button {
+      @include whiteButton;
+    }
+
+    &__orders-icon {
+      width: 18.105%;
+      margin-right: 5%;
+    }
+
+    &__products-icon {
+      width: 18.105%;
+      margin-right: 5%;
+    }
+
+    &__selected-text {
+      @include grayButtonText;
+    }
+
+    &__no-selected-text {
+      @include whiteButtonText;
+    }
+
+    &__right-button-container {
+      width: auto;
+      height: 100%;
+      display: inline-flex;
+    }
+
+    &__product-icon-container {
+      width: 39.15%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__product-icon {
+      height: 100%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    &__status-filter-button {
+      width: clamp(91.318px, 8.909vw, 147px);
+      height: clamp(35.185px, 3.432vw, 56.64px);
+      border-radius: clamp(10.504px, 1.024vw, 16.91px);
+      border: 2px $c1-C solid;
+      background: $c1-J;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__status-filter-button-text {
+      @include whiteButtonText;
+    }
+
+    &__status-filter-button-icon {
+      width: 10.884%;
+      margin-left: 10%;
+    }
+
+    &__all-orders-button {
+      @include whiteButton;
+      margin-right: clamp(9.318px, 0.909vw, 15px);
+    }
+
+    &__all-orders-button-icon {
+      width: 13.822%;
+      margin-right: 4%;
+    }
+
+    &__all-orders-button-text {
+      @include whiteButtonText;
+    }
+
+    &__on-delivery-button {
+      @include greenButton;
+      margin-left: clamp(9.318px, 0.909vw, 15px);
+    }
+
+    &__on-delivery-button-text {
+      @include grayButtonText;
+    }
+
+    &__add-new-button {
+      @include whiteButton;
+    }
+
+    &__add-new-button-icon {
+      width: 13.793%;
+      margin-right: 5%;
+    }
+
+    &__add-new-button-text {
+      @include whiteButtonText;
+    }
+
+    &__all-products-button {
+      @include whiteButton;
+    }
+
+    &__all-products-button-icon {
+      width: 13.822%;
+      margin-right: 4%;
+    }
+
+    &__all-products-button-text {
+      @include whiteButtonText;
+    }
+  }
+}

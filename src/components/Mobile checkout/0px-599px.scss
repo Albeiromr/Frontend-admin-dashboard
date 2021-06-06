@@ -1,0 +1,32 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .mobile-checkout {
+    width: 100%;
+    height: clamp(907.439px, 283.574vw, 1600px);
+    position: relative;
+    animation-name: mobileCheckoutComponent;
+    animation-duration: 0.3s;
+    animation-delay: none;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+
+    &__payment-container {
+      width: 89.371%;
+      height: 93.441%;
+      position: absolute;
+      top: 2.299%;
+      left: 5.314%;
+    }
+  }
+
+  @keyframes  mobileCheckoutComponent {
+    from {
+      transform: translateX(90%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+}

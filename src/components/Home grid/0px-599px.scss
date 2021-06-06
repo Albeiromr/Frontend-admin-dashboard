@@ -1,0 +1,106 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .home-grid {
+    width: 100%;
+    min-width: 320px;
+    height: 230.654vw;
+    min-height: 738.094px;
+    position: relative;
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(16px, 4.347vw, 25px);
+      color: $c1-A;
+      position: absolute;
+      top: 2.613%;
+      left: 5.797%;
+    }
+
+    &__category-container {
+      width: 100%;
+      height: 2.722%;
+      position: absolute;
+      top: 8.063%;
+      left: 0;
+      overflow-x: scroll;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__category-subcontainer {
+      width: auto;
+      height: 100%;
+      padding: 0 calc(clamp(18.55px, 5.797vw, 50px) - 8px);
+      display: inline-flex;
+    }
+
+    &__individual-category-container {
+      margin: 0 8px;
+      padding: 0 14px;
+      width: auto;
+      height: 100%;
+      background: $c1-F;
+      display: flex;
+      align-items: center;
+      border-radius: 100px;
+      cursor: pointer;
+    }
+
+    &__category {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(12px, 2.898vw, 14px);
+      color: $c1-A;
+    }
+
+    &__product-card-container {
+      width: 98.067%;
+      height: auto;
+      min-height: 20%;
+      position: absolute;
+      top: 13.299%;
+      left: 0.966%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__button {
+      width: 39.379%;
+      height: 4.284%;
+      background: $c1-F;
+      cursor: pointer;
+      border-radius: clamp(7.907px, 2.471vw, 22px);
+      position: absolute;
+      bottom: 3%;
+      right: 2.891%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__button-text {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(12.367px, 3.864vw, 25px);
+      color: $c1-A;
+      margin-left: 10%;
+    }
+
+    &__button-arrow {
+      width: clamp(10.542px, 4.5vw, 30px);
+      margin-right: 10%;
+    }
+  }
+}

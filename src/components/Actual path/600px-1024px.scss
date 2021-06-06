@@ -1,0 +1,51 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .actual-path {
+    width: 100%;
+    height: 5.338vw;
+    padding: 0 calc(4.9vw - 4px);
+    display: flex;
+    align-items: center;
+
+    &__subcontainer {
+      width: auto;
+      height: 51.219%;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    &__text {
+      margin: 0 8px;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(14px, 2.045vw, 30px);
+      color: $c1-C;
+      cursor: pointer;
+    }
+
+    &__text--strong {
+      margin: 0 8px;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(14px, 2.045vw, 30px);
+      color: $c1-A;
+      cursor: pointer;
+    }
+
+    &__bar {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(14px, 3.045vw, 30px);
+      color: $c1-C;
+    }
+
+    &__bar--hidden {
+      display: none;
+    }
+  }
+}

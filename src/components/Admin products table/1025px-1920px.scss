@@ -1,0 +1,82 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-products-table {
+    width: 100%;
+    max-width: 1650px;
+    height: 42.121vw;
+    max-height: 695px;
+    position: relative;
+
+    &__table-title-bar {
+      width: 92.848%;
+      height: 10.071%;
+      background: $c1-D;
+      @include tableTitleBarborderRadius;
+      position: absolute;
+      top: 0;
+      left: 3.575%;
+    }
+
+    &__first-title {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 4.569%;
+    }
+
+    &__second-title {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 17.950%;
+    }
+
+    &__third-title {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 34.203%;
+    }
+
+    &__fourt-title {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 54.569%;
+    }
+
+    &__fith-title {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 67.167%;
+    }
+
+    &__sixth-title {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 78.916%;
+    }
+
+    &__seventh-title {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 87.728%;
+    }
+
+    &__table-container {
+      width: 92.848%;
+      height: 89.928%;
+      background: $c1-J;
+      position: absolute;
+      border: 2px $c1-D solid;
+      @include tableBorderRadius;
+      top: 10.071%;
+      left: 3.575%;
+    }
+  }
+}

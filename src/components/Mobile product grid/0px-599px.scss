@@ -1,0 +1,50 @@
+@import "../../sass/variables";
+
+@media only screen and (max-width: 599px) {
+  .mobile-product-grid {
+    width: 180.917%;
+    min-width: 578.937px;
+    height: 355vw;
+    min-height: 1136px;
+    position: relative;
+    transform: translateX(var(--translate));
+    transition: all 0.3s ease;
+
+    &__subcontainer {
+      width: 54.205%;
+      height: 96.618%;
+      position: absolute;
+      top: 1.656%;
+      left: 45.26%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__filter-container {
+      width: 44.058%;
+      height: 61.283%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__button {
+      width: 8.424%;
+      height: 3.956%;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(8px, 4.611vw, 20px);
+      position: absolute;
+      top: 64.941%;
+      left: 19.626%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__button-icon {
+      width: 45.46%;
+    }
+  }
+}

@@ -1,0 +1,221 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-order-details-table {
+    width: 100%;
+    max-width: 1650px;
+    height: auto;
+    min-height: clamp(330.484px, 32.242vw, 532px);
+    padding: 0 clamp(36.651px, 3.575vw, 59px);
+
+    &__title-bar {
+      width: 100%;
+      height: clamp(43.484px, 4.242vw, 70px);
+      background: $c1-D;
+      @include tableTitleBarborderRadius;
+      position: relative;
+    }
+
+    &__titleOne {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 4.66%;
+    }
+
+    &__titleTwo {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 21.018%;
+    }
+
+    &__titleThree {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 45.104%;
+    }
+
+    &__titleFour {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 68.537%;
+    }
+
+    &__titleFive {
+      @include tableFieldTitle;
+      position: absolute;
+      top: 31.428%;
+      left: 84.791%;
+    }
+
+    &__table-container {
+      width: 100%;
+      height: auto;
+      border: 2px $c1-D solid;
+      @include tableBorderRadius;
+      background: $c1-J;
+    }
+
+    &__first-bar {
+      width: 100%;
+      height: clamp(46.59px, 4.545vw, 75px);
+      position: relative;
+    }
+
+    &__first-bar-text-one {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 32.306%;
+      left: 4.45%;
+    }
+
+    &__first-bar-text-two {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 32.306%;
+      left: 20.942%;
+    }
+
+    &__first-bar-text-three {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 32.306%;
+      left: 45.091%;
+    }
+
+    &__first-bar-text-four {
+      @include poppinsRegular18;
+      position: absolute;
+      top: 32.306%;
+      left: 68.686%;
+    }
+
+    &__first-bar-text-on-delivery {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(16px, 1.09vw, 18px);
+      color: $c2-A;
+      position: absolute;
+      top: 32.306%;
+      left: 84.882%;
+    }
+
+    &__first-bar-text-new-order {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(16px, 1.09vw, 18px);
+      color: $c4-A;
+      position: absolute;
+      top: 32.306%;
+      left: 84.882%;
+    }
+
+    &__second-bar {
+      width: 100%;
+      height: clamp(46.59px, 4.545vw, 75px);
+      position: relative;
+    }
+
+    &__second-bar-title-container {
+      width: 28.35%;
+      height: 100%;
+      background: $c1-E;
+      border-radius: 0 clamp(12.424px, 1.212vw, 20px) 0 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__second-bar-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(16px, 1.278vw, 21.09px);
+      color: $admin-black-text;
+      position: absolute;
+      top: 36%;
+      left: 17.326%;
+    }
+
+    &__second-bar-address-container {
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 36%;
+      right: 6.862%;
+      display: inline-flex;
+    }
+
+    &__second-bar-shipping-title {
+      margin: 0;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: clamp(16px, 1.278vw, 21.09px);
+      color: $admin-black-text;
+      margin-right: clamp(12.424px, 1.212vw, 20px);
+    }
+
+    &__second-bar-shipping-text {
+      @include poppinsRegular18;
+    }
+
+    &__third-bar {
+      width: 100%;
+      height: clamp(46.59px, 4.545vw, 75px);
+      position: relative;
+      background: $c1-E;
+    }
+
+    &__third-bar-text-one {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 4.777%;
+    }
+
+    &__third-bar-text-two {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 21.007%;
+    }
+
+    &__third-bar-text-three {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 44.829%;
+    }
+
+    &__third-bar-text-four {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 68.52%;
+    }
+
+    &__third-bar-text-five {
+      @include poppinsMedium18;
+      position: absolute;
+      top: 36.428%;
+      left: 84.947%;
+    }
+
+    &__product-container {
+      width: 100%;
+      height: auto;
+      min-height: clamp(121.757px, 11.878vw, 196px);
+      margin-bottom: clamp(28.575px, 2.787vw, 46px);
+    }
+  }
+}
