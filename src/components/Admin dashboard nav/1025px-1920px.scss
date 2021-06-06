@@ -67,50 +67,6 @@
       transition: all 0.3s ease;
     }
 
-    &__status-filter-button {
-      width: clamp(91.318px, 8.909vw, 147px);
-      height: clamp(35.185px, 3.432vw, 56.64px);
-      border-radius: clamp(10.504px, 1.024vw, 16.91px);
-      border: 2px $c1-C solid;
-      background: $c1-J;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-
-    &__status-filter-button-text {
-      @include whiteButtonText;
-    }
-
-    &__status-filter-button-icon {
-      width: 10.884%;
-      margin-left: 10%;
-    }
-
-    &__all-orders-button {
-      @include whiteButton;
-      margin-right: clamp(9.318px, 0.909vw, 15px);
-    }
-
-    &__all-orders-button-icon {
-      width: 13.822%;
-      margin-right: 4%;
-    }
-
-    &__all-orders-button-text {
-      @include whiteButtonText;
-    }
-
-    &__on-delivery-button {
-      @include greenButton;
-      margin-left: clamp(9.318px, 0.909vw, 15px);
-    }
-
-    &__on-delivery-button-text {
-      @include grayButtonText;
-    }
-
     &__add-new-button {
       @include whiteButton;
     }

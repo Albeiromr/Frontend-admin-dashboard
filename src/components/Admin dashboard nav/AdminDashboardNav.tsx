@@ -2,11 +2,7 @@ import React, {useContext} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
-import ordersWhite from '../../assets/icons/ordersWhite.svg';
-import ordersGray from '../../assets/icons/ordersGray.svg';
 import productsWhite from '../../assets/icons/productsWhite.svg';
-import productsGray from '../../assets/icons/productsGray.svg';
-import sortBy from '../../assets/icons/sortBy.svg';
 import chevronLeftGray from '../../assets/icons/chevronLeftGray.svg';
 import addGray from '../../assets/icons/addGray.svg';
 import shoesGray from '../../assets/icons/shoesGray.svg';
@@ -27,8 +23,6 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 const AdminDashboardNav = () => {
 
     const {
-        menuSelected,
-        setMenuSelected,
         adminRoute,
         setAdminRoute,
         productFamily,
@@ -37,15 +31,6 @@ const AdminDashboardNav = () => {
         setProductPost
     } = useContext(AdminDashboardContext);
 
-    const handleOrderButtonClick = () => {
-      if (menuSelected !== "orders") setMenuSelected("orders");
-      else return;
-      setAdminRoute("orders");
-      setProductToEdit(productToEditInitial);
-      setProductPost(productPostInitial);
-    };
-
-    
 
     const handleAddNewClick = () => {
         setAdminRoute("product-form");
@@ -58,12 +43,6 @@ const AdminDashboardNav = () => {
         setProductToEdit(productToEditInitial);
         setProductPost(productPostInitial);
     }
-
-    const handleAllOrdersClick = () => {
-        setAdminRoute("orders");
-        setProductToEdit(productToEditInitial);
-        setProductPost(productPostInitial);
-    };
     
     
     const handleSneakersClick = () => {
@@ -166,25 +145,6 @@ const AdminDashboardNav = () => {
 
             <div className="admin-dashboard-nav__right-button-container">
 
-                {adminRoute === "orders" ?
-                <div className="admin-dashboard-nav__status-filter-button">
-                    <p className="admin-dashboard-nav__status-filter-button-text">Status</p>
-                    <img className="admin-dashboard-nav__status-filter-button-icon" src={sortBy} alt="sort by" />
-                </div>
-                : null}
-
-                {adminRoute === "order-details" ?
-                <div onClick={handleAllOrdersClick} className="admin-dashboard-nav__all-orders-button">
-                    <img className="admin-dashboard-nav__all-orders-button-icon" src={chevronLeftGray} alt="back" />
-                    <p className="admin-dashboard-nav__all-orders-button-text">All Orders</p>
-                </div>
-                : null}
-
-                {adminRoute === "order-details" ?
-                <div className="admin-dashboard-nav__on-delivery-button">
-                    <p className="admin-dashboard-nav__on-delivery-button-text">On Delivery</p>
-                </div>
-                : null}
 
                 {adminRoute === "products" ?
                 <div onClick={handleAddNewClick} className="admin-dashboard-nav__add-new-button">
