@@ -45,13 +45,7 @@ const AdminDashboardNav = () => {
       setProductPost(productPostInitial);
     };
 
-    const handleProductsButtonClick = () => {
-      if (menuSelected !== "products") setMenuSelected("products");
-      else return;
-      setAdminRoute("products");
-      setProductToEdit(productToEditInitial);
-      setProductPost(productPostInitial);
-    };
+    
 
     const handleAddNewClick = () => {
         setAdminRoute("product-form");
@@ -119,36 +113,11 @@ const AdminDashboardNav = () => {
 
             <div className="admin-dashboard-nav__left-button-container">
 
-                <div className={menuSelected === "orders" ?
-                    "admin-dashboard-nav__selected-button" : 
-                    "admin-dashboard-nav__no-selected-button"}
-                    onClick={handleOrderButtonClick}>
+                
 
-                        <img className="admin-dashboard-nav__orders-icon" 
-                        src={menuSelected === "orders" ? ordersWhite : ordersGray} alt="orders" 
-                        />
-
-                        <p className={menuSelected === "orders" ?
-                            "admin-dashboard-nav__selected-text" :
-                            "admin-dashboard-nav__no-selected-text"}
-                        >Orders</p>
-
-                </div>
-
-                <div className={menuSelected === "products" ?
-                    "admin-dashboard-nav__selected-button":
-                    "admin-dashboard-nav__no-selected-button"}
-                    onClick={handleProductsButtonClick}>
-
-                        <img className="admin-dashboard-nav__products-icon" 
-                        src={menuSelected === "products" ? productsWhite : productsGray} alt="products" 
-                        />
-
-                        <p className={menuSelected === "products" ?
-                            "admin-dashboard-nav__selected-text" :
-                            "admin-dashboard-nav__no-selected-text"}
-                        >Products</p>
-
+                <div className="admin-dashboard-nav__selected-button">
+                    <img className="admin-dashboard-nav__products-icon" src={productsWhite} alt="products" />
+                     <p className="admin-dashboard-nav__selected-text">Products</p>
                 </div>
 
             </div>

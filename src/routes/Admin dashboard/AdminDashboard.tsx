@@ -6,8 +6,6 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 import AdminDashboardHeader from '../../components/Admin dashboard header/AdminDashboardHeader';
 import AdminDashboardNav from '../../components/Admin dashboard nav/AdminDashboardNav';
 import AdminProductsTable from '../../components/Admin products table/AdminProductsTable';
-import AdminOrdersTable from '../../components/Admin orders table/AdminOrdersTable';
-import AdminOrderDetailsTable from '../../components/Admin order details table/AdminOrderDetailsTable';
 import AdminProductForm from '../../components/Admin product form/AdminProductForm';
 import AdminProductDetails from '../../components/Admin product details/AdminProductDetails';
 import AdminPagination from '../../components/Admin pagination products/AdminPagination';
@@ -25,8 +23,6 @@ const AdminDashboard = () => {
             <AdminDashboardNav />
 
             {adminRoute === "products" ? <AdminProductsTable /> : null}
-            {adminRoute === "orders" ? <AdminOrdersTable /> : null}
-            {adminRoute === "order-details" ? <AdminOrderDetailsTable /> : null}
             {adminRoute === "product-form" ? <AdminProductForm /> : null}
             {adminRoute === "product-details" ? <AdminProductDetails /> : null}
             {adminRoute === "products" || adminRoute === "orders" ? <AdminPagination /> : null}
