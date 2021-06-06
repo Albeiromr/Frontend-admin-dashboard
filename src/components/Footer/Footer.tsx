@@ -12,12 +12,9 @@ import mastercard from '../../assets/icons/mastercard.svg';
 import amex from '../../assets/icons/amex.svg';
 import discover from '../../assets/icons/discover.svg';
 import logo from '../../assets/logo/brand.png';
-import {useHistory} from 'react-router-dom';
 
 
 const Footer = () => {
-
-  const history = useHistory();
 
     const handleClick = () => {
       window.scroll({

@@ -3,7 +3,6 @@ import {productPostInitial, productGetInitial, productToEditInitial, productToSh
 import {
   contextProps,
   contextValue,
-  menuSelectedType,
   adminRouteType,
   productFamilyType,
   productPostInterface,
@@ -14,8 +13,6 @@ import {
  import {useLocation} from 'react-router-dom';
 
 export const AdminDashboardContext = createContext<contextValue>({
-  menuSelected: "",
-  setMenuSelected: () => {},
   adminRoute: "",
   setAdminRoute: () => {},
   productFamily: "",
@@ -36,8 +33,6 @@ export const AdminDashboardContext = createContext<contextValue>({
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   
-  //this state is for highlighting the orders and products button in the admin panel
-  const [menuSelected, setMenuSelected] = useState<menuSelectedType>("orders");
 
   //this state tells the admindashboard what child and buttons to show
   const [adminRoute, setAdminRoute] = useState<adminRouteType>("products");
@@ -90,8 +85,6 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   return (
     <AdminDashboardContext.Provider
       value={{
-        menuSelected,
-        setMenuSelected,
         adminRoute,
         setAdminRoute,
         productFamily,
