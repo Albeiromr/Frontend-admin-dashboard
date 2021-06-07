@@ -11,6 +11,19 @@
     background: $c1-J;
     position: relative;
 
+    ::placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    :-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+    ::-moz-placeholder {
+      color: $c1-C;
+      opacity: 1;
+    }
+
     &__subcontainer {
       width: clamp(303.772px, 29.636vw, 489px);
       height: clamp(383.909px, 37.454vw, 618px);

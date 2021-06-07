@@ -17,6 +17,8 @@ export interface contextValue {
   setProductOffset:(value:number) => void;
   productToShow: productToShowInterface;
   setProductToShow: (value: productToShowInterface) => void;
+  credentials:{username: string, password: string};
+  setCredentials: (value: credentials) => void;
 };
 
 export interface contextProps {

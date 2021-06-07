@@ -11,6 +11,7 @@ import {
   productToShowInterface
  } from "./types";
  import {useLocation} from 'react-router-dom';
+import { stringify } from "node:querystring";
 
 export const AdminDashboardContext = createContext<contextValue>({
   adminRoute: "",
@@ -28,7 +29,9 @@ export const AdminDashboardContext = createContext<contextValue>({
   productOffset: 0,
   setProductOffset: () => {},
   productToShow:productToShowInitial,
-  setProductToShow: () => {}
+  setProductToShow: () => {},
+  credentials: {username: "", password: ""},
+  setCredentials: () => {}
 });
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
@@ -80,6 +83,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   //this state stores the product to show e¿when you make click over a product in the admin dashboard
   const [productToShow, setProductToShow] = useState<productToShowInterface>(productToShowInitial);
 
+  //this state store the typed credentials in the login page
+  const [credentials, setCredentials] = useState<{username: string, password: string}>({username: "", password: ""});
+
 
 
   return (
@@ -100,7 +106,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
         productOffset,
         setProductOffset,
         productToShow,
-        setProductToShow
+        setProductToShow,
+        credentials, 
+        setCredentials
       }}
     >
       {props.children}

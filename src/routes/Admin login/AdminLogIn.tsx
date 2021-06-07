@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
 const AdminLogIn = () => {
+
+    const {credentials, setCredentials} = useContext(AdminDashboardContext);
+
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setCredentials({...credentials, [e.target.name]: e.target.value});
+    };
+
 
     return(
         <div className="admin-login">
@@ -14,6 +22,7 @@ const AdminLogIn = () => {
                     <div className="admin-login__user-input-container">
                         <label className="admin-login__label" htmlFor="username">Username</label>
                         <input 
+                        onChange={handleInputChange}
                         className="admin-login__input" 
                         type="text" 
                         name="username"    
@@ -22,8 +31,9 @@ const AdminLogIn = () => {
                         />
                     </div>
                     <div className="admin-login__password-input-container">
-                        <label className="admin-login__label" htmlFor="">Password</label>
+                        <label className="admin-login__label" htmlFor="password">Password</label>
                         <input 
+                        onChange={handleInputChange}
                         className="admin-login__input" 
                         type="password" 
                         name="password"    
