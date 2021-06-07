@@ -9,13 +9,14 @@ import {productToEditInitial, productPostInitial} from '../../context/Admin dash
 
 const AdminLogoutButton = () => {
 
-    const {setProductToEdit, setProductPost} = useContext(AdminDashboardContext);
+    const {setProductToEdit, setProductPost, setAuth} = useContext(AdminDashboardContext);
 
     const history = useHistory();
 
     const handleClick = () => {
         setProductToEdit(productToEditInitial);
         setProductPost(productPostInitial);
+        setAuth(false);
         history.push("/");
         window.scroll({
             top: 0,
