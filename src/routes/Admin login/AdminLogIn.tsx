@@ -6,7 +6,7 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 
 const AdminLogIn = () => {
 
-    const {credentials, setCredentials} = useContext(AdminDashboardContext);
+    const {credentials, setCredentials, auth, setAuth} = useContext(AdminDashboardContext);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCredentials({...credentials, [e.target.name]: e.target.value});

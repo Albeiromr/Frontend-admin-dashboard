@@ -19,6 +19,8 @@ export interface contextValue {
   setProductToShow: (value: productToShowInterface) => void;
   credentials:{username: string, password: string};
   setCredentials: (value: credentials) => void;
+  auth: boolean;
+  setAuth: (value: auth) => void;
 };
 
 export interface contextProps {

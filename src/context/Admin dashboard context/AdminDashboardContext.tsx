@@ -31,7 +31,9 @@ export const AdminDashboardContext = createContext<contextValue>({
   productToShow:productToShowInitial,
   setProductToShow: () => {},
   credentials: {username: "", password: ""},
-  setCredentials: () => {}
+  setCredentials: () => {},
+  auth: false,
+  setAuth: () => {}
 });
 
 const AdminDashboardContextProvider: FC<contextProps> = (props) => {
@@ -86,6 +88,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   //this state store the typed credentials in the login page
   const [credentials, setCredentials] = useState<{username: string, password: string}>({username: "", password: ""});
 
+  //this state says if the administrator is logged in or not
+  const [auth, setAuth] = useState<boolean>(false);
+
 
 
   return (
@@ -108,7 +113,9 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
         productToShow,
         setProductToShow,
         credentials, 
-        setCredentials
+        setCredentials,
+        auth,
+        setAuth
       }}
     >
       {props.children}
