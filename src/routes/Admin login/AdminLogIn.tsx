@@ -6,7 +6,7 @@ import {AdminDashboardContext} from '../../context/Admin dashboard context/Admin
 
 const AdminLogIn = () => {
 
-    const {credentials, setCredentials, auth, setAuth} = useContext(AdminDashboardContext);
+    const {credentials, setCredentials, setAuth} = useContext(AdminDashboardContext);
 
     const [showError, setShowError] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState<string>("Wrong credentials, please verify");
