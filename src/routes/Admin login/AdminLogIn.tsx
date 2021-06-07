@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useRef, useState} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
@@ -8,8 +8,36 @@ const AdminLogIn = () => {
 
     const {credentials, setCredentials, auth, setAuth} = useContext(AdminDashboardContext);
 
+    const [showError, setShowError] = useState<boolean>(false);
+    const [errorMessage, setErrorMessage] = useState<string>("Wrong credentials, please verify");
+
+    const loginForm = useRef<HTMLFormElement>(null);
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCredentials({...credentials, [e.target.name]: e.target.value});
+    };
+
+    const handleFormSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        try {
+          let response = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/administrator/${credentials.username}`);
+          let responseToJson = await response.json();
+          if (responseToJson.length === 0) {
+            setAuth(false);
+            setShowError(true);
+            setErrorMessage("Wrong credentials, please verify");
+            return;
+          } else if (responseToJson[0].password === credentials.password) {
+            setAuth(true);
+            setShowError(false);
+          }else {
+            setAuth(false);
+            setShowError(true);
+            setErrorMessage("Wrong credentials, please verify");
+          }
+        } catch {
+          setErrorMessage("Database error, verify connection");
+        }
     };
 
 
@@ -18,7 +46,7 @@ const AdminLogIn = () => {
             <div className="admin-login__subcontainer">
                 <h1 className="admin-login__title">LOG IN </h1>
                 <p className="admin-login__paragraph">Enter your Admin username and password to be able to access the admin dashboard</p>
-                <form className="admin-login__form">
+                <form ref={loginForm} onSubmit={handleFormSubmit} className="admin-login__form">
                     <div className="admin-login__user-input-container">
                         <label className="admin-login__label" htmlFor="username">Username</label>
                         <input 
@@ -43,7 +71,7 @@ const AdminLogIn = () => {
                     </div>
                     <button className="admin-login__submit-button" type="submit">Log In</button>
                 </form>
-                <p className="admin-login__error">Wrong credentials, please verify </p>
+                {showError ? <p className="admin-login__error">{errorMessage}</p> : null}
             </div>
             
 
