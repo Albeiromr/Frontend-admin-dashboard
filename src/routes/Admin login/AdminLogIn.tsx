@@ -19,26 +19,37 @@ const AdminLogIn = () => {
 
     const handleFormSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        try {
-          let response = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/administrator/${credentials.username}`);
-          let responseToJson = await response.json();
-          if (responseToJson.length === 0) {
-            setAuth(false);
+        if(credentials.password === "" || credentials.username === ""){
+
             setShowError(true);
-            setErrorMessage("Wrong credentials, please verify");
-            return;
-          } else if (responseToJson[0].password === credentials.password) {
-            setAuth(true);
-            setShowError(false);
-            setCredentials({username: "", password: ""});
-          }else {
-            setAuth(false);
-            setShowError(true);
-            setErrorMessage("Wrong credentials, please verify");
-          }
-        } catch {
-          setErrorMessage("Database error, verify connection");
-        }
+            setErrorMessage("Please enter an username and password");
+
+        }else {
+
+            try {
+                let response = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/administrator/${credentials.username}`);
+                let responseToJson = await response.json();
+                if (responseToJson.length === 0) {
+                  setAuth(false);
+                  setShowError(true);
+                  setErrorMessage("Wrong credentials, please verify");
+                  return;
+                } else if (responseToJson[0].password === credentials.password) {
+                  setAuth(true);
+                  setShowError(false);
+                  setCredentials({username: "", password: ""});
+                }else if (responseToJson[0].password !== credentials.password){
+                  setAuth(false);
+                  setShowError(true);
+                  setErrorMessage("Wrong credentials, please verify");
+                }
+              } catch {
+                  if(credentials.username === "") setErrorMessage("Please enter an username and password");
+                  else setErrorMessage("Database error, verify connection");
+              };
+
+        };
+       
     };
 
 
