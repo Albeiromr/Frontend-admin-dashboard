@@ -17,6 +17,7 @@ const AdminLogoutButton = () => {
         setProductToEdit(productToEditInitial);
         setProductPost(productPostInitial);
         setAuth(false);
+        localStorage.setItem("logged", "false");
         history.push("/");
         window.scroll({
             top: 0,

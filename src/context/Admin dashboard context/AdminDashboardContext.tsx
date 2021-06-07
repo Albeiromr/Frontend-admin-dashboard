@@ -11,7 +11,6 @@ import {
   productToShowInterface
  } from "./types";
  import {useLocation} from 'react-router-dom';
-import { stringify } from "node:querystring";
 
 export const AdminDashboardContext = createContext<contextValue>({
   adminRoute: "",
@@ -88,8 +87,16 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   //this state store the typed credentials in the login page
   const [credentials, setCredentials] = useState<{username: string, password: string}>({username: "", password: ""});
 
+  //this functions verify if the administrator is logged in in page load
+    const StorageLogged: string | null  = localStorage.getItem("logged");
+    let initialAuth: boolean = false;
+    if(StorageLogged === null || StorageLogged === "false") initialAuth = false;
+    else if (StorageLogged === "true") initialAuth = true;
+    else initialAuth = false;
+  
+
   //this state says if the administrator is logged in or not
-  const [auth, setAuth] = useState<boolean>(false);
+  const [auth, setAuth] = useState<boolean>(initialAuth);
 
 
 

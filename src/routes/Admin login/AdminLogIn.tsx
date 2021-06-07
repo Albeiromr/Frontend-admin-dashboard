@@ -36,6 +36,7 @@ const AdminLogIn = () => {
                   return;
                 } else if (responseToJson[0].password === credentials.password) {
                   setAuth(true);
+                  localStorage.setItem("logged", "true");
                   setShowError(false);
                   setCredentials({username: "", password: ""});
                 }else if (responseToJson[0].password !== credentials.password){
