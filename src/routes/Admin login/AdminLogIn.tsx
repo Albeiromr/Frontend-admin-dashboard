@@ -30,6 +30,7 @@ const AdminLogIn = () => {
           } else if (responseToJson[0].password === credentials.password) {
             setAuth(true);
             setShowError(false);
+            setCredentials({username: "", password: ""});
           }else {
             setAuth(false);
             setShowError(true);
