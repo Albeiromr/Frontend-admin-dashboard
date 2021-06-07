@@ -61,7 +61,7 @@ const AdminPaginationProducts = () => {
                     </div>
 
                     <div className="admin-pagination__numbers-container">
-                        {pages.map(pageNumber => <AdminPageNumber number={pageNumber.number}/>)}
+                        {pages.map(pageNumber => <AdminPageNumber key={pageNumber.number} number={pageNumber.number}/>)}
                     </div>
 
                     <div onClick={handleNextClick} className="admin-pagination__next-button">

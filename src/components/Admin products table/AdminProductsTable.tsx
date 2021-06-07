@@ -23,6 +23,7 @@ const AdminProductsTable = () => {
             <div className="admin-products-table__table-container">
 
                 {productGet.map(product => <AdminListedProduct 
+                key={product.sku}
                 productPicture={product.productImage}
                 productSku={product.sku}
                 productName={product.productName}
