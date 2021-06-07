@@ -1,0 +1,111 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+  .admin-login {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1650px;
+    height: 100vh;
+    min-height: 600px;
+    background: $c1-J;
+    position: relative;
+
+    &__subcontainer {
+      width: clamp(303.772px, 29.636vw, 489px);
+      height: clamp(383.909px, 37.454vw, 618px);
+      position: absolute;
+      top: clamp(10px, 3.212vw, 53px);
+      left:clamp(360.303px, 35.151vw, 580px);
+    }
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 800;
+      font-size: clamp(19.711px, 1.923vw, 31.73);
+      color: $c1-B;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__paragraph {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(14px, 1.030vw, 17px);
+      line-height: 160%;
+      color: $c1-C;
+      position: absolute;
+      top: 9.223%;
+      left: 0;
+    }
+
+    &__form {
+      width: 100%;
+      height: 67.961%;
+      position: absolute;
+      top: 20.226%;
+      left: 0;
+      background: $c1-J;
+      border: 2px $c1-D solid;
+      border-radius: clamp(12.424px, 1.212vw, 20px);
+    }
+
+    &__error {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 700;
+      font-size: clamp(14px, 1.212vw, 20px);
+      color: $c4-A;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__user-input-container {
+      width: 78.437%;
+      height: 17.123%;
+      position: absolute;
+      top: 11.904%;
+      left: 10.838%;
+
+    }
+
+    &__password-input-container {
+      width: 78.437%;
+      height: 17.123%;
+      position: absolute;
+      top: 39.047%;
+      left: 10.838%;
+    }
+
+    &__submit-button {
+      width: 78.437%;
+      height: 13.485%;
+      background: $c2-A;
+      border: 2px $c2-B solid;
+      border-radius: clamp(12.424px, 1.212vw, 20px);
+      font-family: $primary-font;
+      font-weight: 600;
+      font-size: clamp(13.101px, 1.278vw, 21.09px);
+      color: $c1-J;
+      position: absolute;
+      top: 72.142%;
+      left: 10.838%;
+    }
+
+    &__label {
+      @include lableText;
+    }
+
+    &__input {
+      @include input;
+      @include placeholder;
+    }
+  }
+}
