@@ -18,7 +18,9 @@ const AdminProductDetails = () => {
 
             <div className="admin-product-details__table-container">
                 <div className="admin-product-details__table-image-container">
-                    {/* <img className="admin-product-details__table-image" src={test} alt="product" /> */}
+                    <img className="admin-product-details__table-image" 
+                    src={`${process.env.REACT_APP_BACKEND_DOMAIN}/static/${productToShow.productImage}`}
+                    alt="product" />
                 </div>
 
                 <h1 className="admin-product-details__title">{productToShow.productName}</h1>

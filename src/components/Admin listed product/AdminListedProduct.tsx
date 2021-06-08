@@ -50,7 +50,9 @@ const AdminListedProduct:FC<componentProps> = (props) => {
             <div onClick={handleProductClick} className="admin-listed-product__clicked-area"></div>
 
             <div className="admin-listed-product__image-container">
-                {/* <img className="admin-listed-product__image" src={test} alt="product" /> */}
+                <img className="admin-listed-product__image" 
+                src={`${process.env.REACT_APP_BACKEND_DOMAIN}/static/${props.productPicture}`}
+                alt="product" />
             </div>
 
             <p className="admin-listed-product__textOne">{props.productSku}</p>

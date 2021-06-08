@@ -24,7 +24,7 @@ const AdminProductsTable = () => {
 
                 {productGet.map(product => <AdminListedProduct 
                 key={product.sku}
-                productPicture={product.productImage}
+                productPicture={product.productThumbnail}
                 productSku={product.sku}
                 productName={product.productName}
                 productPrice={product.productPrice}
