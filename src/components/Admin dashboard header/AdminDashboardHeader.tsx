@@ -22,6 +22,10 @@ const AdminDashboardHeader = () => {
         if(productToSearch.productSku === ""){
             setShowError(true);
             setErrorMessage("Invalid SKU");
+            setTimeout(()=> {
+                setShowError(false);
+                form.current!.reset();
+            }, 5000)
         }else {
             setShowError(false);
             let data = await fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/products/product/${productToSearch.productSku}`);
