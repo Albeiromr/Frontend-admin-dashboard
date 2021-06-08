@@ -37,7 +37,7 @@
       background: $c1-J;
       border-radius: clamp(9.759px, 0.952vw, 15.71px);
       padding-left: 8.83%;
-      padding-right: 18.322%;
+      padding-right: 50.322%;
       font-family: $secundary-font;
       font-weight: 600;
       font-size: clamp(15px, 1.11vw, 18.33px);
@@ -63,6 +63,18 @@
       top: 25.946%;
       right: 5.339%;
       cursor: pointer;
+    }
+
+    &__error {
+      margin: 0;
+      padding: 0;
+      font-family: $secundary-font;
+      font-weight: 400;
+      font-size: clamp(14px, 1.090vw, 18px);
+      color: $c4-A;
+      position: absolute;
+      top: 35%;
+      left: 60.5%;
     }
 
     &__admin-container {
