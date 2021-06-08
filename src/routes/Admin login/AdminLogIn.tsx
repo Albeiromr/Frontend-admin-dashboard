@@ -3,6 +3,8 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import logoLogin from '../../assets/logo/logoLogin.svg';
+import logoBackgroundBig from '../../assets/logo/logoBackgroundBig.svg';
+import logoBackgroundSmall from '../../assets/logo/logoBackgroundSmall.svg';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
 const AdminLogIn = () => {
@@ -57,6 +59,8 @@ const AdminLogIn = () => {
 
     return(
         <div className="admin-login">
+            <img className="admin-login__background-back" src={logoBackgroundBig} alt="logo" />
+            <img className="admin-login__background-back-small" src={logoBackgroundSmall} alt="logo" />
             <div className="admin-login__subcontainer">
                 <img className="admin-login__logo" src={logoLogin} alt="logo" />    
                 <form ref={loginForm} onSubmit={handleFormSubmit} className="admin-login__form">

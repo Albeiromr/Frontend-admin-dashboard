@@ -24,6 +24,20 @@
       opacity: 1;
     }
 
+    &__background-back {
+      width: 30.545%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__background-back-small {
+      width: 25.909%;
+      position: absolute;
+      top: 25%;
+      left: 70%;
+    }
+
     &__subcontainer {
       width: clamp(303.772px, 29.636vw, 489px);
       height: clamp(383.909px, 37.454vw, 618px);
