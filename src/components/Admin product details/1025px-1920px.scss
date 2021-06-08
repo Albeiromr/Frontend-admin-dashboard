@@ -165,49 +165,49 @@
     &__old-price-title {
       @include productTextTitle;
       top: 62.72%;
-      left: 72.392%;
+      left: 77.392%;
     }
 
     &__old-price-text {
       @include productText;
       top: 63.22%;
-      left: 82.576%;
+      left: 87.576%;
     }
 
     &__rate-title {
       @include productTextTitle;
       top: 71.36%;
-      left: 72.392%;
+      left: 77.392%;
     }
 
     &__rate-text {
       @include productText;
       top: 71.86%;
-      left: 78.725%;
+      left: 83.725%;
     }
 
     &__sold-title {
       @include productTextTitle;
       top: 80%;
-      left: 72.392%;
+      left: 77.392%;
     }
 
     &__sold-text {
       @include productText;
       top: 80.50%;
-      left: 78.275%;
+      left: 83.275%;
     }
 
     &__profit-title {
       @include productTextTitle;
       top: 88.64%;
-      left: 72.392%;
+      left: 77.392%;
     }
 
     &__profit-text {
       @include productText;
       top: 89.14%;
-      left: 79.117%;
+      left: 84.117%;
     }
   }
 }
