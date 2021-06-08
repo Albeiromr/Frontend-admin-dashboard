@@ -2,6 +2,7 @@ import React, {useContext, useRef, useState} from 'react';
 import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
+import logoLogin from '../../assets/logo/logoLogin.svg';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
 const AdminLogIn = () => {
@@ -57,8 +58,7 @@ const AdminLogIn = () => {
     return(
         <div className="admin-login">
             <div className="admin-login__subcontainer">
-                <h1 className="admin-login__title">LOG IN </h1>
-                <p className="admin-login__paragraph">Enter your Admin username and password to be able to access the admin dashboard</p>
+                <img className="admin-login__logo" src={logoLogin} alt="logo" />    
                 <form ref={loginForm} onSubmit={handleFormSubmit} className="admin-login__form">
                     <div className="admin-login__user-input-container">
                         <label className="admin-login__label" htmlFor="username">Username</label>

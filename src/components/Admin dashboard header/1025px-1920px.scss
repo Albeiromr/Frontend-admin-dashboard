@@ -9,17 +9,6 @@
     background: $c1-D;
     position: relative;
 
-    &__title {
-      margin: 0;
-      padding: 0;
-      font-family: $secundary-font;
-      font-weight: 800;
-      font-size: clamp(19.711px, 1.923vw, 31.73);
-      color: $c1-J;
-      position: absolute;
-      top: 16.974%;
-      left: 3.575%;
-    }
 
     &__logo {
       width: 14.424%;

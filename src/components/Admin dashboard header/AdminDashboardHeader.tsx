@@ -81,7 +81,6 @@ const AdminDashboardHeader = () => {
 
     return(
         <header className="admin-dashboard-header">
-            {/* <h1 className="admin-dashboard-header__title">CRUD Dashboard</h1> */}
             <img onClick={handleLogoClick} className="admin-dashboard-header__logo" src={logo} alt="logo" />
 
             <form ref={form} onSubmit={handleFormSubmit} className="admin-dashboard-header__form">

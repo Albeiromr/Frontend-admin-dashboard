@@ -32,28 +32,10 @@
       left:clamp(360.303px, 35.151vw, 580px);
     }
 
-    &__title {
-      margin: 0;
-      padding: 0;
-      font-family: $secundary-font;
-      font-weight: 800;
-      font-size: clamp(19.711px, 1.923vw, 31.73);
-      color: $c1-B;
+    &__logo {
+      width: 48.057%;
       position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    &__paragraph {
-      margin: 0;
-      padding: 0;
-      font-family: $secundary-font;
-      font-weight: 400;
-      font-size: clamp(14px, 1.030vw, 17px);
-      line-height: 160%;
-      color: $c1-C;
-      position: absolute;
-      top: 9.223%;
+      top: 4.692%;
       left: 0;
     }
 
