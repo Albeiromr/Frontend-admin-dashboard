@@ -5,6 +5,15 @@
     margin: 0 auto;
     width: 100%;
     height: 128.515vw;
+    position: relative;
+
+    &__background-back {
+      display: none;
+    }
+
+    &__background-back-small {
+      display: none;
+    }
 
     &__subcontainer {
       display: none;

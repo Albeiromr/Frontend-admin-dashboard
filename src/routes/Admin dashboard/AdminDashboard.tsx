@@ -10,6 +10,7 @@ import AdminProductForm from '../../components/Admin product form/AdminProductFo
 import AdminProductDetails from '../../components/Admin product details/AdminProductDetails';
 import AdminPagination from '../../components/Admin pagination products/AdminPagination';
 import AdminLogoutButton from '../../components/Admin logout button/AdminLogoutButton';
+import AdminNotAvailable from '../../components/Admin not available/AdminNotAvailable';
 
 
 const AdminDashboard = () => {
@@ -18,6 +19,8 @@ const AdminDashboard = () => {
 
     return(
         <div className="admin-dashboard">
+
+            <AdminNotAvailable />
             
             <AdminDashboardHeader />
             <AdminDashboardNav />

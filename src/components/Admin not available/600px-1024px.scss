@@ -1,0 +1,23 @@
+@import "../../sass/variables";
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .admin-not-avaiable {
+    width: 68.229vw;
+    height: 15.364vw;
+    background: darkcyan;
+    position: absolute;
+    top: 30.721vw;
+    left: 15.885vw;
+
+    &__logo {
+      width: 26.120%;
+      position: absolute;
+      top: 0;
+      left: 37.022%;
+    }
+
+    &__paragraph {
+        
+    }
+  }
+}

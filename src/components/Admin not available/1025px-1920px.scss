@@ -1,0 +1,8 @@
+@import "../../sass/variables";
+@import "../../sass/adminMixins";
+
+@media only screen and (min-width: 1025px) {
+ .admin-not-avaiable {
+    display: none;
+ }
+}

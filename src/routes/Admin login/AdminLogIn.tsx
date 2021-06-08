@@ -5,6 +5,7 @@ import "./1025px-1920px.scss";
 import logoLogin from '../../assets/logo/logoLogin.svg';
 import logoBackgroundBig from '../../assets/logo/logoBackgroundBig.svg';
 import logoBackgroundSmall from '../../assets/logo/logoBackgroundSmall.svg';
+import AdminNotAvailable from '../../components/Admin not available/AdminNotAvailable';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 
 const AdminLogIn = () => {
@@ -59,6 +60,7 @@ const AdminLogIn = () => {
 
     return(
         <div className="admin-login">
+            <AdminNotAvailable />
             <img className="admin-login__background-back" src={logoBackgroundBig} alt="logo" />
             <img className="admin-login__background-back-small" src={logoBackgroundSmall} alt="logo" />
             <div className="admin-login__subcontainer">

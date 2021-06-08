@@ -7,6 +7,15 @@
     min-width: 320px;
     height: 167.874vw;
     min-height: 537.198px;
+    position: relative;
+
+    &__background-back {
+      display: none;
+    }
+
+    &__background-back-small {
+      display: none;
+    }
 
     &__subcontainer {
       display: none;
