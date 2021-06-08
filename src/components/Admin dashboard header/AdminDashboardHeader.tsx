@@ -3,6 +3,7 @@ import "./0px-599px.scss";
 import "./600px-1024px.scss";
 import "./1025px-1920px.scss";
 import profile from '../../assets/images/profile.jpg';
+import logo from '../../assets/logo/logo.svg';
 import graySearch from '../../assets/icons/graySearch.svg';
 import validator from 'validator';
 import {AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
@@ -74,9 +75,14 @@ const AdminDashboardHeader = () => {
         };
     };
 
+    const handleLogoClick = () => {
+        setAdminRoute("products")
+    }
+
     return(
         <header className="admin-dashboard-header">
-            <h1 className="admin-dashboard-header__title">Admin Dashboard</h1>
+            {/* <h1 className="admin-dashboard-header__title">CRUD Dashboard</h1> */}
+            <img onClick={handleLogoClick} className="admin-dashboard-header__logo" src={logo} alt="logo" />
 
             <form ref={form} onSubmit={handleFormSubmit} className="admin-dashboard-header__form">
 
