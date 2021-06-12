@@ -5,6 +5,7 @@ import "./1025px-1920px.scss";
 import{AdminDashboardContext} from '../../context/Admin dashboard context/AdminDashboardContext';
 import AdminListedProduct from '../Admin listed product/AdminListedProduct';
 
+
 const AdminProductsTable = () => {
 
     const {productGet} = useContext(AdminDashboardContext);

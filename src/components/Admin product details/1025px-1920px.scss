@@ -54,6 +54,12 @@
     &__table-image {
       width: 100%;
       border-radius: inherit;
+      animation-name: bigPictureAnimation;
+      animation-timing-function: ease;
+      animation-duration: 0.8s;
+      animation-delay: none;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
     }
 
     &__title {
@@ -145,7 +151,7 @@
 
     &__reviews-text {
       @include productText;
-      top: 80.50%;
+      top: 80.5%;
       left: 59.731%;
     }
 
@@ -193,7 +199,7 @@
 
     &__sold-text {
       @include productText;
-      top: 80.50%;
+      top: 80.5%;
       left: 83.275%;
     }
 
@@ -207,6 +213,15 @@
       @include productText;
       top: 89.14%;
       left: 84.117%;
+    }
+  }
+
+  @keyframes bigPictureAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 }

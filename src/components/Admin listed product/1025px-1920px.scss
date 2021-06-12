@@ -25,7 +25,7 @@
     &__image-container {
       width: clamp(54.045px, 5.272vw, 87px);
       height: clamp(54.045px, 5.272vw, 87px);
-      background: $c1-D;
+      //background: $c1-D;
       border-radius: clamp(7.454px, 0.727vw, 12px);
       position: absolute;
       top: 5.122%;
@@ -35,6 +35,12 @@
     &__image {
       width: 100%;
       border-radius: inherit;
+      animation-name: smallPictureAnimation;
+      animation-timing-function: ease;
+      animation-duration: 0.8s;
+      animation-delay: none;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
     }
 
     &__textOne {
@@ -87,6 +93,15 @@
       height: 100%;
       cursor: pointer;
       z-index: 20;
+    }
+  }
+
+  @keyframes smallPictureAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 }
