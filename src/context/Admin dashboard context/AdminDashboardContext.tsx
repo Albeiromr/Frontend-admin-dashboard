@@ -68,7 +68,7 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
     .then(response => response.json())
     .then(response => setProductGet(response))
     .catch(error => console.log(error)); 
-  }, [productFamily,productOffset]);
+  }, [productFamily,productOffset, adminRoute]);
 
   //this state stores the product estracted from the database for editing
   const [productToEdit, setProductToEdit] = useState<productToEditInterface>(productToEditInitial);
