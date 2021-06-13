@@ -28,7 +28,8 @@ const AdminDashboardNav = () => {
         productFamily,
         setProductFamily,
         setProductToEdit,
-        setProductPost
+        setProductPost,
+        setProductOffset
     } = useContext(AdminDashboardContext);
 
 
@@ -50,6 +51,7 @@ const AdminDashboardNav = () => {
       else return;
       setProductToEdit(productToEditInitial);
       setProductPost(productPostInitial);
+      setProductOffset(0);
     };
 
     const handlePantsClick = () => {
@@ -57,6 +59,7 @@ const AdminDashboardNav = () => {
       else return;
       setProductToEdit(productToEditInitial);
       setProductPost(productPostInitial);
+      setProductOffset(0);
     };
 
     const handleCapsClick = () => {
@@ -64,6 +67,7 @@ const AdminDashboardNav = () => {
       else return;
       setProductToEdit(productToEditInitial);
       setProductPost(productPostInitial);
+      setProductOffset(0);
     };
 
     const handleJacketsClick = () => {
@@ -71,6 +75,7 @@ const AdminDashboardNav = () => {
       else return;
       setProductToEdit(productToEditInitial);
       setProductPost(productPostInitial);
+      setProductOffset(0);
     };
 
     const handleShortsClick = () => {
@@ -78,6 +83,7 @@ const AdminDashboardNav = () => {
       else return;
       setProductToEdit(productToEditInitial);
       setProductPost(productPostInitial);
+      setProductOffset(0);
     };
 
     const handleShirtClick = () => {
@@ -85,6 +91,7 @@ const AdminDashboardNav = () => {
       else return;
       setProductToEdit(productToEditInitial);
       setProductPost(productPostInitial);
+      setProductOffset(0);
     };
 
     return(
