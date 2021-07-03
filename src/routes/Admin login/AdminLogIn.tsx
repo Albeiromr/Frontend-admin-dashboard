@@ -42,7 +42,8 @@ const AdminLogIn = () => {
                   setAuth(true);
                   localStorage.setItem("logged", "true");
                   setShowError(false);
-                  setCredentials({username: "", password: ""});
+                  // the following line is not necessary for demo users
+                  // setCredentials({username: "", password: ""});
                 }else if (responseToJson[0].password !== credentials.password){
                   setAuth(false);
                   setShowError(true);
