@@ -76,7 +76,8 @@ const AdminLogIn = () => {
                         name="username"    
                         id="username"     
                         placeholder="Enter username"     
-                        value="administrator"          
+                        value="administrator"
+                        disabled          
                         />
                     </div>
                     <div className="admin-login__password-input-container">
@@ -88,7 +89,8 @@ const AdminLogIn = () => {
                         name="password"    
                         id="password"     
                         placeholder="Enter password"  
-                        value="administrator01"         
+                        value="administrator01"   
+                        disabled         
                         />
                     </div>
                     <button className="admin-login__submit-button" type="submit">Log In</button>
