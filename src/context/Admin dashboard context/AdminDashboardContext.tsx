@@ -85,7 +85,7 @@ const AdminDashboardContextProvider: FC<contextProps> = (props) => {
   const [productToShow, setProductToShow] = useState<productToShowInterface>(productToShowInitial);
 
   //this state store the typed credentials in the login page
-  const [credentials, setCredentials] = useState<{username: string, password: string}>({username: "", password: ""});
+  const [credentials, setCredentials] = useState<{username: string, password: string}>({username: "administrator", password: "administrator01"});
 
   //this functions verify if the administrator is logged in in page load
     const StorageLogged: string | null  = localStorage.getItem("logged");
